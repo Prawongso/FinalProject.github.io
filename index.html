@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {margin:0;}
+
+ul {								<!--Class for Navigation bar-->
+  list-style-type: none;			
+  margin: 0;
+  padding: 0;
+  overflow: hidden;					<!--if we delete this line, the navbar is gone-->
+  background-color: #000000;		<!--Navbar color to black-->
+  position: fixed;					<!--fixed so it always on top-->
+  top: 0;							<!--This is for changing the navbar position vertically-->
+  width: 100%;						<!--Navbar will cover the entire screen-->
+}
+
+.logo img{							<!--Logo class-->					
+	float: left;					<!--fix position of the logo to top left-->
+	}
+
+li {								<!--position of menu class-->
+  float: right;						<!--Fix menu class position to the top right-->
+}
+
+li a {								<!--button menu class-->
+  display: block;					<!--the shape of the button-->
+  color: white;						<!--text color-->
+  text-align: center;				<!--position of the text is center in the button-->
+  padding: 14px 16px;				<!--size of button-->
+  text-decoration: none;			<!--could add underline effect/ bold effec / italic effecr. But none for now-->
+}
+
+li a:hover:not(.active) {			<!--class to change color if the button is not clicked-->
+  background-color: #111;			<!--default color of the button-->
+}
+
+.active {							<!--class to change color if clicked-->
+  color : black;					<!--change text to black-->
+  background-color: #ffff00;		<!--change the button to yellow-->
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <div class="logo">																	<!--call logo class-->
+	<img src="AV.png" alt="AV">															<!--print logo-->
+  </div>
+  <li><a class="active" href="#bla">Home</a></li>										<!--print all the button, home button call active class to change color-->
+  <li><a href="#bla">bla</a></li>														
+  <li><a href="#bla">bla</a></li>
+  <li><a href="#bla">bla</a></li>
+</ul>
+
+<div style="padding:20px;margin-top:30px;background-color:#ff5050;height:1500px;">		<!--I make the page long so I can check the navbar position is fixed on top or not-->
+  <h1>Fixed Top Navigation Bar</h1>														<!--random text-->
+  <h2>Scroll this page to see the effect</h2>
+  <h2>The navigation bar will stay at the top of the page while scrolling</h2>
+
+</div>
+
+</body>
+</html>
