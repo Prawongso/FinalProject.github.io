@@ -4,7 +4,19 @@
 <style>
 body {margin:0;}
 
-ul {								/*Class for Navigation bar*/
+ul_logo {								/*Class for Navigation bar*/
+  list-style-type: none;			
+  margin: 0;
+  padding: 0;
+  overflow: hidden;					/*if we delete this line, the navbar is gone*/
+  background-color: #A9A9A9;		/*Navbar color to black*/
+  position: fixed;					/*fixed so it always on top*/
+  top: 0;							/*This is for changing the navbar position vertically*/
+  width: 20%;				/*Navbar will cover the entire screen*/
+  left:0;
+
+}
+ul_con{
   list-style-type: none;			
   margin: 0;
   padding: 0;
@@ -12,19 +24,25 @@ ul {								/*Class for Navigation bar*/
   background-color: #000000;		/*Navbar color to black*/
   position: fixed;					/*fixed so it always on top*/
   top: 0;							/*This is for changing the navbar position vertically*/
-  width: 100%;						/*Navbar will cover the entire screen*/
+  width: 80%;				/*Navbar will cover the entire screen*/
+  right:0;
+
 }
 
 .logo img{							/*Logo class*/					
-	float: left;					/*fix position of the logo to top left*/
+	float: center;					/*fix position of the logo to top left*/
+        width:160px;
+        height:80px;
 	}
 
 li {								/*position of menu class*/
   float: right;						/*Fix menu class position to the top right*/
+  margin: 10px;
 }
 
 li a {								/*button menu class*/
   display: block;					/*the shape of the button*/
+  margin:auto;
   color: white;						/*text color*/
   text-align: center;				/*position of the text is center in the button*/
   padding: 14px 16px;				/*size of button*/
@@ -44,13 +62,17 @@ li a:hover:not(.active) {			/*class to change color if the button is not clicked
 <body>
 
 <ul>
+<ul_logo>
   <div class="logo">																	<!--call logo class-->
-	<img src="AV.png" alt="AV">															<!--print logo-->
+	<img src="https://raw.githubusercontent.com/Prawongso/FinalProject/d28c3467e0144f85223cb8cd29e2e2700b81e357/AV.png" alt="AV" style="display:block; margin:auto;">															<!--print logo-->
   </div>
+</ul_logo>
+<ul_con>
   <li><a class="active" href="#bla">Home</a></li>										<!--print all the button, home button call active class to change color-->
-  <li><a href="#bla">bla</a></li>														
-  <li><a href="#bla">bla</a></li>
-  <li><a href="#bla">bla</a></li>
+  <li><a href="#bla">Main Page</a></li>														
+  <li><a href="#bla">Selection</a></li>
+  <li><a href="#bla">Introduction</a></li>
+</ul_con>
 </ul>
 
 <div style="padding:20px;margin-top:30px;background-color:#ff5050;height:1500px;">		<!--I make the page long so I can check the navbar position is fixed on top or not-->
