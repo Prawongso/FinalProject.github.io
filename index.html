@@ -57,7 +57,28 @@ li a:hover:not(.active) {			/*class to change color if the button is not clicked
   color : black;					/*change text to black*/
   background-color: #ffff00;		/*change the button to yellow*/
 }
+.fakeimg {
+  background-color: #aaa;
+  width: auto;
+  padding: 20px;
+}
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
 </style>
+<script>
+x=1;
+function change(){
+  x++;
+   document.getElementById("photo").src="car_sample0"+x+".jpg";
+   if(x > 1)
+     x = 0;
+}
+</script>
 </head>
 <body>
 
@@ -76,10 +97,19 @@ li a:hover:not(.active) {			/*class to change color if the button is not clicked
 </ul>
 
 <div style="padding:20px;margin-top:30px;background-color:#ff5050;height:1500px;">		<!--I make the page long so I can check the navbar position is fixed on top or not-->
+  <br><br>	
   <h1>Fixed Top Navigation Bar</h1>														<!--random text-->
   <h2>Scroll this page to see the effect</h2>
   <h2>The navigation bar will stay at the top of the page while scrolling</h2>
 
+/*adding part*/
+
+<article>
+<div class="fakeimg" style="height:350px;">
+<img id="photo" src='car_sample01.jpg' onclick="change()"style = "width:50%; height:100%;">
+</div>
+</article>	
+	
 </div>
 
 </body>
