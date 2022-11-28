@@ -4,29 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <title>3D Object</title>
+    <link rel="stylesheet" href="css/Navbar.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!--Imports a model-viewer JavaScript code -->
     <!--It helps to handle how the 3D Object would be displayed -->
     <script type="module" src="js/3Dviewer.js"></script>
+<style>
+    article {
+    z-index:-1;                     /*Move the object to behind (1 layer)*/
+    position:relative; top:200px;
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+</style>
 </head>
 
 <body>
-    <!-- Main Container -->
-    <div id="container">
-
+  <ul>
+      <ul_logo>
+        <div class="logo">																	<!--call logo class-->
+          <img src="AV.png" alt="AV" style="display:block; margin:auto;">															<!--print logo-->
+        </div>
+      </ul_logo>
+      <ul_con>
+        <li><a href="#bla">Main Page</a></li>														
+        <li><a class="active" href="Product.html">Our Product</a></li>
+        <li><a href="#bla">Introduction</a></li>
+        <li><a href="index.html">Home</a></li>	<!--print all the button, home button call active class to change color-->
+  </ul>
+    <article>
+      <!-- Main Container -->
+      <div id="container">
         <!-- An aside -->
         <!-- This is for holding the 3D object -->
         <div id="aSide">
-
             <!-- 3D objsect -->
             <!-- This inserts the 3D object inside the aside container -->
-            <model-viewer src="assets/HTC_Vive_Headset.gltf" alt="VR Headset" auto-rotate camera-controls ar ios-src="assets/HTC_Vive_Headset.gltf">
+            <model-viewer src="assets/car2.glb" alt="AVCAR2" auto-rotate camera-controls ar ios-src="assets/car2.glb">
             </model-viewer>
         </div>
 
-       
-    </div>
+      </div>
+    </article>
 </body>
 
 </html>
