@@ -14,7 +14,6 @@
 #container {
     height: 100vh;
     width: 100%;
-    position: relative;
     background: #f7f7f7;
 }
 
@@ -25,7 +24,6 @@
 #aSide {
     height: 600px;
     width: 600px;
-    position: absolute;
     top: calc(50% - 250px);
     right: 7%;
 }
@@ -36,7 +34,6 @@
 #aSide model-viewer {
     height: 600px;
     width: 600px;
-    position: absolute;
     top: 0;
     left: 0;
     border: none;
