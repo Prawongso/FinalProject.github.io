@@ -33,11 +33,3 @@
 
 /* This styles the 3D object inserted in the aside container */
 
-#aSide model-viewer {
-    height: 600px;
-    width: 600px;
-    position: relative;
-    top: 300px;
-    left: 0;
-    border: none;
-}
