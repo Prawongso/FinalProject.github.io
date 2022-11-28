@@ -10,7 +10,7 @@
     <!--It helps to handle how the 3D Object would be displayed -->
     <script type="module" src="js/3Dviewer.js"></script>
 <style>
-    article {
+  article {
     z-index:-1;                     /*Move the object to behind (1 layer)*/
     position:relative; top:65px;
     -webkit-flex: 3;
@@ -18,6 +18,12 @@
     flex: 3;
     background-color: #ffffff;
     padding: 10px;
+  }
+  model-viewer {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    border: none;
   }
 </style>
 </head>
