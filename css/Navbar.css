@@ -1,0 +1,54 @@
+ul_logo {								    /*Class for Navigation bar*/
+    list-style-type: none;			
+    margin: 0;
+    padding: 0;
+    overflow: hidden;			            /*if we delete this line, the navbar is gone*/
+    background-color: #000000;	           /*Navbar color to black*/
+    position: fixed;					    /*fixed so it always on top*/
+    top: 0;							        /*This is for changing the navbar position vertically*/
+    width: 20%;				                /*Navbar will cover the entire screen*/
+    left:0;
+  
+  }
+  ul_con{
+    list-style-type: none;			
+    margin: 0;
+    padding: 0;
+    overflow: hidden;		            /*if we delete this line, the navbar is gone*/
+    background-color: #000000;		   /*Navbar color to black*/
+    position: fixed;					/*fixed so it always on top*/
+    top: 0;							    /*This is for changing the navbar position vertically*/
+    width: 80%;				            /*Navbar will cover the entire screen*/
+    right:0;
+  
+  }
+  
+  .logo img{							/*Logo class*/					
+      float: center;					/*fix position of the logo to top left*/
+          width:160px;
+          height:66px;
+      }
+  
+  li {								    /*position of menu class*/
+    float: right;						/*Fix menu class position to the top right*/
+    margin: 10px;
+  }
+  
+  li a {							/*button menu class*/
+    display: block;					/*the shape of the button*/
+    margin:auto;
+    color: white;				    /*text color*/
+    text-align: center;				/*position of the text is center in the button*/
+    padding: 14px 16px;				/*size of button*/
+    text-decoration: none;			/*could add underline effect/ bold effec / italic effecr. But none for now*/
+  }
+  
+  li a:hover:not(.active) {			/*class to change color if the button is not clicked*/
+    background-color: #111;	    /*default color of the button*/
+  }
+  
+  .active {							 /*class to change color if clicked*/
+    color : black;					/*change text to black*/
+    background-color: #ffff00;		/*change the button to yellow*/
+    border-radius: 25px;            /*make the corner more rounded*/
+  }

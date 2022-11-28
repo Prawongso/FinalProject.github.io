@@ -1,87 +1,35 @@
 <!DOCTYPE html>
 <html>
+  <link rel="stylesheet" href="css/Navbar.css">
 <head>
 <style>
-body {margin:0;}
-
-ul_logo {								/*Class for Navigation bar*/
-  list-style-type: none;			
-  margin: 0;
-  padding: 0;
-  overflow: hidden;					/*if we delete this line, the navbar is gone*/
-  background-color: #A9A9A9;		/*Navbar color to black*/
-  position: fixed;					/*fixed so it always on top*/
-  top: 0;							/*This is for changing the navbar position vertically*/
-  width: 20%;				/*Navbar will cover the entire screen*/
-  left:0;
-
-}
-ul_con{
-  list-style-type: none;			
-  margin: 0;
-  padding: 0;
-  overflow: hidden;					/*if we delete this line, the navbar is gone*/
-  background-color: #000000;		/*Navbar color to black*/
-  position: fixed;					/*fixed so it always on top*/
-  top: 0;							/*This is for changing the navbar position vertically*/
-  width: 80%;				/*Navbar will cover the entire screen*/
-  right:0;
-
-}
-
-.logo img{							/*Logo class*/					
-	float: center;					/*fix position of the logo to top left*/
-        width:160px;
-        height:80px;
-	}
-
-li {								/*position of menu class*/
-  float: right;						/*Fix menu class position to the top right*/
-  margin: 10px;
-}
-
-li a {								/*button menu class*/
-  display: block;					/*the shape of the button*/
-  margin:auto;
-  color: white;						/*text color*/
-  text-align: center;				/*position of the text is center in the button*/
-  padding: 14px 16px;				/*size of button*/
-  text-decoration: none;			/*could add underline effect/ bold effec / italic effecr. But none for now*/
-}
-
-li a:hover:not(.active) {			/*class to change color if the button is not clicked*/
-  background-color: #111;			/*default color of the button*/
-}
-
-.active {							/*class to change color if clicked*/
-  color : black;					/*change text to black*/
-  background-color: #ffff00;		/*change the button to yellow*/
-}
-.fakeimg {
-  background-color: #aaa;
-  width: auto;
-  padding: 20px;
-}
-article {
-  -webkit-flex: 3;
-  -ms-flex: 3;
-  flex: 3;
-  background-color: #f1f1f1;
-  padding: 10px;
-}
+  body {
+    margin:0;
+  }
+  .fakeimg {
+    background-color: #aaa;
+    width: auto;
+    padding: 20px;
+  }
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
 </style>
 <script>
-x=1;
-function change(){
-  x++;
-   document.getElementById("photo").src="car_sample0"+x+".jpg";
-   if(x > 1)
-     x = 0;
-}
+  x=1;
+  function change(){
+    x++;
+    document.getElementById("photo").src="car_sample0"+x+".jpg";
+    if(x > 1)
+      x = 0;
+  }
 </script>
 </head>
 <body>
-
 <ul>
 <ul_logo>
   <div class="logo">																	<!--call logo class-->
@@ -89,10 +37,10 @@ function change(){
   </div>
 </ul_logo>
 <ul_con>
-  <li><a class="active" href="#bla">Home</a></li>										<!--print all the button, home button call active class to change color-->
   <li><a href="#bla">Main Page</a></li>														
-  <li><a href="#bla">Selection</a></li>
+  <li><a href="Product.html">Our Product</a></li>
   <li><a href="#bla">Introduction</a></li>
+  <li><a class="active" href="index.html">Home</a></li>	<!--print all the button, home button call active class to change color-->s
 </ul_con>
 </ul>
 
