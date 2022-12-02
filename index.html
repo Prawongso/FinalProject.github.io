@@ -23,7 +23,7 @@
   x=1;
   function change(){
     x++;
-    document.getElementById("photo").src="car_sample0"+x+".jpg";
+    document.getElementById("photo").src="assets/car_sample0"+x+".jpg";
     if(x > 1)
       x = 0;
   }
@@ -33,7 +33,7 @@
   <ul>
   <ul_logo>
     <div class="logo">																	<!--call logo class-->
-    <img src="AV.png" alt="AV" style="display:block; margin:auto;">															<!--print logo-->
+    <img src="assets/AV.png" alt="AV" style="display:block; margin:auto;">															<!--print logo-->
     </div>
   </ul_logo>
   <ul_con>
@@ -54,7 +54,7 @@
 
   <article>
     <div class="fakeimg" style="height:350px;">
-      <img id="photo" src='car_sample01.jpg' onclick="change()"style = "width:50%; height:100%;">
+      <img id="photo" src='assets/car_sample01.jpg' onclick="change()"style = "width:50%; height:100%;">
     </div>
   </article>	
     
