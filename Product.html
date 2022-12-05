@@ -14,11 +14,9 @@
   box-sizing: border-box;
   margin:0;
   }
-  table, th, td {
-  padding: 15px;
-  }
-  table {
-  width: 100%;
+  body{
+    position:relative;
+    z-index:-1;
   }
   article {
     z-index:-1;                     /*Move the object to behind (1 layer)*/
@@ -52,6 +50,12 @@
     text-align: center;
     color: white;
     
+  }
+  table, th, td {
+  padding: 15px;
+  }
+  table {
+  width: 100%;
   }
   .footer2 {
     background-color: #000000;
