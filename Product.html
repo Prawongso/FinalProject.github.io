@@ -3,37 +3,35 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>3D Object</title>
+    <title>AV DRONE</title>
     <link rel="stylesheet" href="css/Navbar.css">
 
     <!--Imports a model-viewer JavaScript code -->
     <!--It helps to handle how the 3D Object would be displayed -->
     <script type="module" src="js/3Dviewer.js"></script>
 <style>
-  * {
-  box-sizing: border-box;
-  margin:0;
-  }
   body{
     position:relative;
     z-index:-1;
   }
   article {
     z-index:-1;                     /*Move the object to behind (1 layer)*/
-    min-height: 100vh;              /*Position will be alwats on top*/
+    min-height: 105vh;              /*Position will be alwats on top*/
     position:relative; top:65px;
     -webkit-flex: 3;
     -ms-flex: 3;
     flex: 3;
-    background-color: #ffffff;
+    background-color:#292929;
+    color: white;
     padding: 10px;
   }
   .main {
   width: 54%;
+  height: 600px;
   float: left;
   position: relative;
   padding: 15px;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   }
   model-viewer {
     height: 600px;
@@ -42,43 +40,56 @@
     float: right;
     border: none;
   }
-  .footer {
-    background-color: #2e2e2e;
-    padding: 15px;
-    width: 100%;
-    margin-bottom: auto;
-    text-align: center;
-    color: white;
-    
-  }
-  table, th, td {
+  .botmenu {
+  background-color: #ffffff;
   padding: 15px;
-  }
-  table {
   width: 100%;
+  height: 200px;
+  margin-bottom: auto;
   }
-  .footer2 {
+  .nextprev{
+    position: relative;
+    float: right;
     background-color: #000000;
-    padding: 15px;
-    width: 100%;
-    margin-bottom: auto;
+    border-radius: 10px;
     color: white;
-    
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 55px 2px;
+    cursor: pointer;
+    margin-left: 400px;
   }
-  
+  .nextprev:hover{
+    background-color: yellow;
+    color: black;
+  }
+  .merch{
+    position: relative;
+    float: left;
+    margin: 55px 2px;
+    font-weight: 900;
+  }
+  .merchicon{
+    position: relative;
+    float: left;
+    height: 50px;
+    width: 50px;
+    margin-left: 100px;
+  }
 </style>
 </head>
 
 <body>
   <ul>
-      <ul_logo>
+      <ul_con>
         <div class="logo">																	<!--call logo class-->
           <img src="assets/AV.png" alt="AV" style="display:block; margin:auto;">															<!--print logo-->
         </div>
-      </ul_logo>
-      <ul_con>
         <li><a href="#bla">Main Page</a></li>														
-        <li><a class="active" href="Product.html">Our Product</a></li>
+        <li><a class="active" href="Product.html">AV AUTO</a></li>
         <li><a href="#bla">Introduction</a></li>
         <li><a href="index.html">Home</a></li>	<!--print all the button, home button call active class to change color-->
   </ul>
@@ -92,8 +103,15 @@
         alt="AVCAR2" auto-rotate camera-controls ar ios-src="assets/car2.glb"
         shadow-intensity="1" camera-controls touch-action="pan-y">
       </model-viewer>
-      
     </article>
+    <div class="botmenu">
+      <div class="merch">
+        <h1>BUY TOY VERSION</h1>
+        <img src="assets/Icon/126083.png" class="merchicon" alt="BUY!">
+      </div>
+      <a href="#" class="nextprev">>>>></a>
+      <a href="#" class="nextprev"><<<<</a>
+    </div>
     <div class="footer">
       <p>SUBSCRIBE TO THE ADVANCE VEHICLE NEWSLETTERS</p>
     </div>

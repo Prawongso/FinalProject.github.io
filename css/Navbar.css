@@ -1,16 +1,8 @@
-/*Navigation header class section*/
-ul_logo {								    /*Class for Navigation bar*/
-    list-style-type: none;			
-    margin: 0;
-    padding: 0;
-    overflow: hidden;			            /*if we delete this line, the navbar is gone*/
-    background-color: #000000;	           /*Navbar color to black*/
-    position: fixed;					    /*fixed so it always on top*/
-    top: 0;							        /*This is for changing the navbar position vertically*/
-    width: 20%;				                /*Navbar will cover the entire screen*/
-    left:0;
-  
+* {
+  box-sizing: border-box;
+  margin:0;
   }
+/*Navigation header class section*/
   ul_con{
     list-style-type: none;			
     margin: 0;
@@ -19,16 +11,15 @@ ul_logo {								    /*Class for Navigation bar*/
     background-color: #000000;		   /*Navbar color to black*/
     position: fixed;					/*fixed so it always on top*/
     top: 0;							    /*This is for changing the navbar position vertically*/
-    width: 80%;				            /*Navbar will cover the entire screen*/
+    width: 100%;				            /*Navbar will cover the entire screen*/
     right:0;
   
   }
   
   .logo img{							/*Logo class*/					
-      float: center;					/*fix position of the logo to top left*/
-          width:160px;
-          height:66px;
-      }
+      float: left;					/*fix position of the logo to top left*/
+      padding: 10px;    
+    }
   
   li {								    /*position of menu class*/
     float: right;						/*Fix menu class position to the top right*/
@@ -54,7 +45,31 @@ ul_logo {								    /*Class for Navigation bar*/
     border-radius: 25px;            /*make the corner more rounded*/
   }
 /*Navigation header class section*/
-
+/*footer class section*/
+.footer {
+  background-color: #2e2e2e;
+  padding: 15px;
+  width: 100%;
+  margin-bottom: auto;
+  text-align: center;
+  color: white;
+  
+}
+table, th, td {
+padding: 15px;
+}
+table {
+width: 100%;
+}
+.footer2 {
+  background-color: #000000;
+  padding: 15px;
+  width: 100%;
+  margin-bottom: auto;
+  color: white;
+  
+}
+/*footer class section*/
 /*animation section*/
 .lineUp {
   animation: 3s anim-lineUp ease-in;
