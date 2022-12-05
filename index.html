@@ -6,18 +6,75 @@
   body {
     margin:0;
   }
-  .fakeimg {
-    background-color: #aaa;
-    width: auto;
-    padding: 20px;
+  .pic01_region {
+    position: relative;
+    margin-top:0%;
+    margin-right:70px;
+    float:right; 
+    background-color:#cccccc;
+    width:60%;
+    height:30vw;
   }
-  article {
-    -webkit-flex: 3;
-    -ms-flex: 3;
-    flex: 3;
-    background-color: #f1f1f1;
-    padding: 10px;
+  .pic01_sub_region{
+    position: absolute;
+    left:-400px;
+    top:-100px;
+    background-color:white;
+    display:block;
+    width:500px;
+    height:200px;
   }
+  .pic02_region{
+    margin-top:5%;
+    margin-left:20%;
+    background-color:#456781;
+    width:600px;
+    height:350px;
+    display:table;
+    float:left;
+  }
+  .pic03_region{
+    margin-top:3%;
+    margin-left:5%;
+    background-color:#545454;
+    width:500px;
+    height:400px;
+    display:table;
+    float:left;
+    border-radius: 50%;
+  }
+  .pic04_region{
+    position: relative;
+    margin-top:2%;
+    margin-left:20%;
+    background-color:#781456;
+    width:1400px;
+    height:300px;
+    display:table;
+    float:left;
+  }
+  .pic04_sub_region{
+    position: absolute;
+    right : 0px;
+    bottom:0px;
+    background-color:white;
+    display:block;
+    width:350px;
+    height:80px;
+
+  }
+  .block_region{
+    top:10%;
+    left:15%;
+    position: relative;
+    background-color: #00CED1;
+    float:left;
+    width:20%;
+    margin:40px;
+    height:600px;
+	flex-direction:row;
+  }
+  none {border-style: solid;}
 </style>
 <script>
   x=1;
@@ -44,21 +101,32 @@
   </ul_con>
   </ul>
 
-  <div style="padding:20px;margin-top:30px;background-color:#ff5050;height:1500px;">		<!--I make the page long so I can check the navbar position is fixed on top or not-->
-    <br><br>	
-    <h1>Fixed Top Navigation Bar</h1>														<!--random text-->
-    <h2>Scroll this page to see the effect</h2>
-    <h2>The navigation bar will stay at the top of the page while scrolling</h2>
+  <div style="padding:20px;margin-top:30px;background-color:#ff5050;height:46vw;">		<!--I make the page long so I can check the navbar position is fixed on top or not-->
 
-  /*adding part*/
-
-  <article>
-    <div class="fakeimg" style="height:350px;">
-      <img id="photo" src='assets/car_sample01.jpg' onclick="change()"style = "width:50%; height:100%;">
-    </div>
-  </article>	
-    
+        <br><br>	
+        <h1>Fixed Top Navigation Bar</h1>														<!--random text-->
+        <h2>Scroll this page to see the effect</h2>
+        <h2>The navigation bar will stay at the top of the page while scrolling</h2>
+            <div class ="pic01_region">
+              <img id="photo" src='assets/car_sample01.jpg' onclick="change()"style = "width:100%; height:100%; object-fit:cover;">
+                <span class="pic01_sub_region"></span>
+            </div>
   </div>
-
+  <div style="padding:20px;margin-top:0%;background-color:#ffcccc;height:44vw;">   <!--P2-->
+    <div class="a">
+        <div class="pic02_region">02</div>
+        <div class="pic03_region">03</div>
+        <div class="pic04_region">04
+            <span class="pic04_sub_region">04-SUB</span>
+        </div>
+    </div>
+  </div>
+  <div style="padding:20px;margin-top:0%;background-color:#ddaabb;height:44vw;">   <!--P3-->
+    <div class="block_region">01</div>
+    <div class="block_region">02</div>
+    <div class="block_region">03</div>
+  </div>
+  <div style="padding:20px;margin-top:0%;background-color:black;height:2vw;">   <!--page down-->
+  </div>
 </body>
 </html>
