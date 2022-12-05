@@ -26,6 +26,7 @@
     padding: 10px;
   }
   .main {
+  font-size: 30px;
   width: 54%;
   height: 600px;
   float: left;
@@ -49,7 +50,7 @@
   }
   .nextprev{
     position: relative;
-    float: right;
+    float: left;
     background-color: #000000;
     border-radius: 10px;
     color: white;
@@ -58,9 +59,9 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 55px 2px;
+    margin: 125px 30px;
     cursor: pointer;
-    margin-left: 400px;
+    margin-right: 213px;
   }
   .nextprev:hover{
     background-color: yellow;
@@ -69,7 +70,7 @@
   .merch{
     position: relative;
     float: left;
-    margin: 55px 2px;
+    margin: 55px 125px;
     font-weight: 900;
   }
   .merchicon{
@@ -78,6 +79,11 @@
     height: 50px;
     width: 50px;
     margin-left: 100px;
+  }
+  .review{
+    position: relative;
+    float: right;
+    padding-right: 60px;
   }
 </style>
 </head>
@@ -95,9 +101,11 @@
   </ul>
     <article>
       <div class="main">
-        <h1 class='lineUp'>The City</h1>
-        <p class='lineUp'>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
-        <p class='lineUp'>Resize the browser window to see how the content respond to the resizing.</p>
+        <h1 class='lineUp'>AV Drone</h1><br><br>
+        <p class='lineUp'>This Vehicle produced by Advance Vehicle, it's called AV Drone because the shape looks like a drone. It has four propeller and a turbo.</p>
+        <p class='lineUp'>You can see the vehicle specification, costumer reviews, and buy our merch bellow.</p>
+        <a href="#" class="nextprev"><<<<</a>
+        <a href="#" class="nextprev">>>>></a>
       </div>
       <model-viewer src="assets/car2.glb" 
         alt="AVCAR2" auto-rotate camera-controls ar ios-src="assets/car2.glb"
@@ -109,8 +117,7 @@
         <h1>BUY TOY VERSION</h1>
         <img src="assets/Icon/126083.png" class="merchicon" alt="BUY!">
       </div>
-      <a href="#" class="nextprev">>>>></a>
-      <a href="#" class="nextprev"><<<<</a>
+      <img src="assets/reviews.jpg" class="review" alt="REVIEW!">
     </div>
     <div class="footer">
       <p>SUBSCRIBE TO THE ADVANCE VEHICLE NEWSLETTERS</p>
