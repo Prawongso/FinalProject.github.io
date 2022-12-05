@@ -54,6 +54,7 @@ ul_logo {								    /*Class for Navigation bar*/
     border-radius: 25px;            /*make the corner more rounded*/
   }
 /*Navigation header class section*/
+
 /*animation section*/
 .lineUp {
   animation: 3s anim-lineUp ease-in;
