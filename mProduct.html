@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AV Drone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/Animation.css">
+  <script type="module" src="js/3Dviewer.js"></script>
+</head>
+<style>
+  .grid{
+  font-size: 30px;
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 10px;
+  /*border: 1px solid red;*/
+  }
+  model-viewer {
+    height: 400px;
+    width: 400px;
+    float: left;
+    position: relative;
+    border: none;
+  }
+  .nextprev{
+    position: relative;
+    float: left;
+    background-color: #000000;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .nextprev:hover{
+    background-color: yellow;
+    color: black;
+  }
+  .gridtext{
+  font-size: 20px;
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 10px;
+  color: white;
+  /*border: 1px solid red;*/
+  }
+  .gridspec{
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(116,116,116,1) 100%, rgba(130,145,138,1) 100%);
+  font-size: 20px;
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 10px;
+  /*border: 1px solid red;*/
+  }
+  .speedspec{
+    text-align: center;
+    position: relative;
+    float: left;
+    font-weight: 900;
+  }
+  .speed{
+    position: relative;
+    float: left;
+    height: 50px;
+    width: 150px;
+  }
+  .enginespec{
+    text-align: center;
+    position: relative;
+    float: right;
+    font-weight: 900;
+  }
+  .engine{
+    position: relative;
+    float: right;
+    height: 60px;
+    width: 110px;
+  }
+  .gridspec2{
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(116,116,116,1) 100%, rgba(130,145,138,1) 100%);
+  font-size: 20px;
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 10px;
+  /*border: 1px solid red;*/
+  }
+  .dimensionspec{
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 900;
+  }
+  .dimension{
+    position: relative;
+    float: left;
+    height: 100px;
+    width: 100px;
+  }
+  .merch{
+  text-align: center;
+  background: white;
+  font-size: 20px;
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 10px;
+  font-weight: 900;
+  /*border: 1px solid red;*/
+  }
+  .merchicon{
+    text-align: center;
+    position: relative;
+    height: 50px;
+    width: 50px;
+  }
+  .subscribe{
+    text-align: center;
+    float: left;
+    width: 100%;
+    background: #5e5e5e;
+    color: white;
+    position: relative;
+  }
+  .footer{
+    text-align: center;
+    float: left;
+    width: 100%;
+    background: #000000;
+    color: white;
+    position: relative;
+  }
+  table, th, td {
+  padding: 15px;
+  }
+  table {
+  width: 100%;
+  }
+</style>
+<body>
+
+  <div class="my-sidebar my-bar-block my-card my-animate-left" style="display:none" id="mySidebar">
+    <button class="my-bar-item my-button my-large"
+    onclick="my_close()">Close &times;</button>
+    <a href="#" class="my-bar-item my-button">HOME</a>
+    <a href="#" class="my-bar-item my-button">INTRO</a>
+    <a href="#" class="my-bar-item my-button">AV AUTO</a>
+    <a href="#" class="my-bar-item my-button">MAIN PAGE</a>
+  </div>
+
+  <div id="main">
+
+    <div class="my-color">
+      <button id="openNav" class="my-button my-color my-xlarge" onclick="my_open()">&#9776;</button>
+      <div class="my-container">
+        <img src="assets/AV.png" class="logo" alt="av">
+      </div>
+    </div>
+    <div class="grid">
+      <model-viewer src="assets/car2.glb" 
+          alt="AVCAR2" auto-rotate camera-controls ar ios-src="assets/car2.glb"
+          shadow-intensity="1" camera-controls touch-action="pan-y">
+      </model-viewer>
+      <a href="Product3.html" class="nextprev"><<<<</a>
+      <a href="Product2.html" class="nextprev" style="float:right ;">>>>></a>
+    </div>
+    <div class="gridtext">
+      <h1 class='lineUp'>AV Drone</h1>
+      <p class='lineUp'>This Vehicle produced by Advance Vehicle, it's called AV Drone because the shape looks like a drone. It has four propeller and a turbo.</p>
+      <p class='lineUp'>You can see the vehicle specification, costumer reviews, and buy our merch bellow.</p>
+    </div>
+    <div class="gridspec">
+      <div class="speedspec">
+        <img src="assets/Icon/speedometer.png" class="speed" alt="speed">
+          <p>130 Kmph.</p>
+      </div>
+      <div class="enginespec">
+        <img src="assets/Icon/engine.png" class="engine" alt="engine">
+        <p>200 hp.</p>
+      </div>
+    </div>
+    <div class="gridspec2">
+      <div class="dimensionspec">
+        <img src="assets/Icon/dimension.png" class="dimension" alt="dimension">
+        <p>6.1m L x 2m W</p>
+        <p> x 3.2m H</p>
+      </div>
+    </div>
+    <div class="merch">
+      <p>BUY TOY VERSION</p>
+      <a href="https://shopee.tw/" target="_blank"><img src="assets/Icon/126083.png" class="merchicon" alt="BUY!"></a>
+    </div>
+    <div class="subscribe">
+      <p>SUBSCRIBE TO THE ADVANCE VEHICLE NEWSLETTERS</p>
+    </div>
+    <div class="footer">
+      <table>
+        <tr>
+          <th><img src="assets/Icon/5ca483b65d32fb0b9e2ac5a3-facebook.png" alt="Facebook"><b href="https://www.facebook.com/" target="_blank">FACEBOOK</b></th>
+          <th><img src="assets/Icon/5ca4860a5d32fb0b9e2ac5a8-instagram.png" alt="Instagram"><b href="https://www.instagram.com/" target="_blank">INSTAGRAM</b></th>
+        </tr>
+        <tr>
+          <th><img src="assets/Icon/5ca487ee5d32fb0b9e2ac5ad-linkedin.png" alt="Linkedin"><b href="https://www.linkedin.com/" target="_blank">LINKEDIN</b></th>
+          <th><img src="assets/Icon/628cd2388a4b79293d7c99ff-tiktok.svg" alt="Tik Tok"><b href="https://www.tiktok.com/en/" target="_blank">TIK TOK</b></th>
+        </tr>
+        <tr>
+          <th><img src="assets/Icon/628cd2a7bc2f334e875664a9-twitch.svg" alt="Twitch"><b href="https://www.twitch.tv/" target="_blank">TWITCH</b></th>
+          <th><img src="assets/Icon/5ca487595d32fb0b9e2ac5aa-twitter.png" alt="Twitter"><b href="https://twitter.com/?lang=en" target="_blank">TWITTER</b></th>
+        </tr>
+        <tr>
+          <th colspan="2"><img src="assets/Icon/5ca487bf5d32fb0b9e2ac5ac-youtube.png" alt="Youtube"><b href="https://www.youtube.com/" target="_blank">YOUTUBE</b></th>
+        </tr>
+    </div>
+      
+  </div>
+
+  <script>
+  function my_open() {
+    document.getElementById("main").style.marginLeft = "25%";
+    document.getElementById("mySidebar").style.width = "25%";
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("openNav").style.display = 'none';
+  }
+  function my_close() {
+    document.getElementById("main").style.marginLeft = "0%";
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("openNav").style.display = "inline-block";
+  }
+</script>
+
+</body>
+</html>
