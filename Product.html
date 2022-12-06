@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <title>AV DRONE</title>
     <link rel="stylesheet" href="css/Navbar.css">
-
     <!--Imports a model-viewer JavaScript code -->
     <!--It helps to handle how the 3D Object would be displayed -->
     <script type="module" src="js/3Dviewer.js"></script>
@@ -40,6 +39,55 @@
     position: relative;
     float: right;
     border: none;
+  }
+  .spec {
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(116,116,116,1) 100%, rgba(130,145,138,1) 100%);
+  padding: 15px;
+  width: 100%;
+  height: 200px;
+  margin-bottom: auto;
+  }
+  .speedspec{
+    text-align: center;
+    position: relative;
+    float: left;
+    font-weight: 900;
+    margin-left: 20px;
+  }
+  .speed{
+    position: relative;
+    float: left;
+    height: 100px;
+    width: 300px;
+  }
+  .horsespec{
+    text-align: center;
+    position: relative;
+    left: 200px;
+    float: left;
+    font-weight: 900;
+    margin-left: 20px;
+  }
+  .engine{
+    position: relative;
+    float: left;
+    margin: auto;
+    height: 120px;
+    width: 220px;
+  }
+  .dimensionspec{
+    text-align: center;
+    position: relative;
+    float: right;
+    right: 50px;
+    font-weight: 900px;
+    margin-right: 20px;
+  }
+  .dimension{
+    position: relative;
+    height: 100px;
+    width: 100px;
   }
   .botmenu {
   background-color: #ffffff;
@@ -85,6 +133,11 @@
     float: right;
     padding-right: 60px;
   }
+  @media only screen and (min-width: 1900px) {
+    article {
+      min-height: 70vh;
+    }  
+  }
 </style>
 </head>
 
@@ -112,6 +165,21 @@
         shadow-intensity="1" camera-controls touch-action="pan-y">
       </model-viewer>
     </article>
+    <div class="spec">
+      <div class="speedspec">
+        <img src="assets/Icon/speedometer.png" class="speed" alt="speed">
+        <h1>130 Kmph.</h1>
+      </div>
+      <div class="horsespec">
+        <img src="assets/Icon/engine.png" class="engine" alt="engine">
+        <h1>200 hp.</h1>
+      </div>
+      <div class="dimensionspec">
+        <img src="assets/Icon/dimension.png" class="dimension" alt="dimension">
+        <h1>6.1m L x 2m W</h1>
+        <h1> x 3.2m H</h1>
+      </div>
+    </div>
     <div class="botmenu">
       <div class="merch">
         <h1>BUY TOY VERSION</h1>
@@ -140,6 +208,11 @@
     <div class="copyright">
       <p>Copyright 2022 - All rights reserved By 黄庚辰 and 徐葆翰</p>
     </div>
+    <script>
+      if (document.body.clientWidth > 1900) {
+        document.body.style.zoom = "140%";
+      }
+    </script>
 </body>
 
 </html>
