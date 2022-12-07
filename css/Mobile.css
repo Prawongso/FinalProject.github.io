@@ -97,6 +97,15 @@
       height: 100px;
       width: 100px;
     }
+    .review{
+      text-align: center;
+      background: white;
+      width: 100%;
+      float: left;
+      position: relative;
+      padding: 15px;
+      /*border: 1px solid red;*/
+      }
     .merch{
     text-align: center;
     background: white;
@@ -135,6 +144,9 @@
     }
     table {
     width: 100%;
+    }
+    a { 
+      text-decoration: none; 
     }
     a:link, a:visited {
       color: white;
