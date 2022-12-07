@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="css/Navbar.css">
+<head>
+  <meta charset="UTF-8">
+    <title>Official Advance Vehicle Webiste</title>
+<style>
+  * {
+  box-sizing: border-box;
+  }
+  body {
+    margin:0;
+  }
+  .Page01{
+      margin-top:30px;
+      background:linear-gradient(rgba(150,150,150),rgba(50,50,50));
+      width:100%;
+      height:47.5vw;
+      display: table;
+  }
+  .Page02{
+      margin-top:0%;
+      background:linear-gradient(rgba(50,50,50),rgba(220,220,220));
+      width:100%;
+      height:46vw;
+      display: block;
+  }
+  .Page03{
+      margin-top:0%;
+      background:linear-gradient(rgba(220,220,220),rgba(100,100,100));
+      width:100%;
+      height:44vw;
+      display: table;
+  }
+  .pic01_region {
+    position: relative;
+    margin-top:5%;
+    margin-right:70px;
+    float:right; 
+    background-color:#cccccc;
+    width:60%;
+    height:30vw;
+  }
+  .pic01_sub_region{
+    position: absolute;
+    left:-35%;
+    top:-100px;
+    background-color:white;
+    display:block;
+    width:50%;
+    height:40%;
+  }
+  .pic02_region{
+    margin-top:5%;
+    margin-left:20%;
+    background-color:#456781;
+    width:35%;
+    height:40%;
+    display:table;
+    float:left;
+  }
+  .pic03_region{
+    margin-top:3%;
+    margin-left:5%;
+    background-color:white;
+    width:35%;
+    height:45%;
+    display:table;
+    float:left;
+    border-radius: 50%;
+  }
+  .pic04_region{
+    position: relative;
+    margin-top:2%;
+    margin-left:20%;
+    background-color:#781456;
+    width:75%;
+    height:35%;
+    display:table;
+    float:left;
+  }
+  .pic04_sub_region{
+    position: absolute;
+    right : 0px;
+    bottom:0px;
+    background-color:white;
+    display:block;
+    width:350px;
+    height:80px;
+
+  }
+  .block_region{
+    top:10%;
+    left:15%;
+    position: relative;
+    background-color: #00CED1;
+    float:left;
+    width:20%;
+    margin:2%;
+    height:70%;
+	flex-direction:row;
+  }
+  .block_region_sub{
+    position: absolute;
+    top:0px;
+    width:100%;
+    height:40%;
+    display:table;
+    background-color:black;
+  }
+  tr{
+    border-style: solid;
+    border-width:2px;
+  }
+  td{
+    text-align: right;
+  }
+  table{
+    text-align: center;
+    margin:0%;
+    font-size:120%;
+    border: 1px solid black;
+    border-width:2px;
+    border-collapse: collapse;
+    width:100%;
+  }
+  none {border-style: solid;}
+</style>
+<script>
+  x=1;
+  function change(){
+    x++;
+    document.getElementById("photo").src="assets/img/car_sample0"+x+".jpg";
+    if(x > 1)
+      x = 0;
+  }
+</script>
+</head>
+<body>
+  <ul>
+  <ul_con>
+    <div class="logo">																	<!--call logo class-->
+      <img src="assets/AV.png" alt="AV" style="display:block; margin:auto;">															<!--print logo-->
+    </div>
+    <li><a href="#bla">Main Page</a></li>														
+    <li><a href="Product.html">AV AUTO</a></li>
+    <li><a class="active" href="Home.html">Home</a></li>	<!--print all the button, home button call active class to change color-->s
+    <li><a href="Index.html">Introduction</a></li>
+  </ul_con>
+  </ul>
+
+  <div class="Page01">		<!--I make the page long so I can check the navbar position is fixed on top or not-->
+
+        <br><br>	
+        <h1>Fixed Top Navigation Bar</h1>														<!--random text-->
+        <h2>Scroll this page to see the effect</h2>
+        <h2>The navigation bar will stay at the top of the page while scrolling</h2>
+            <div class ="pic01_region">
+              <img id="photo" src='assets/img/car_sample01.jpg' onclick="change()"style = "width:100%; height:100%; object-fit:cover;">
+                <span class="pic01_sub_region"></span>
+            </div>
+  </div>
+  <div class="Page02">   <!--P2-->
+        <div class="pic02_region">02</div>
+        <div class="pic03_region">03</div>
+        <div class="pic04_region">04
+            <span class="pic04_sub_region">04-SUB</span>
+        </div>
+  </div>
+  <div class="Page03">   <!--P3-->
+    <div class="block_region">
+        <div class="block_region_sub">
+        <img src="assets/img/car_DRONE.jpg" alt="AV" style="display:block; margin:auto; width:90%; height:90%;">
+        </div>
+        <table style="margin-top:75%; left:0px;">    
+            <tr>
+                <th colspan="2"style="font-size:180%;">AV DRONE</th>
+            </tr>
+            <tr>
+                <th>Extreme Speed</th>
+                <td>130 Kmph.</td>
+            <tr>
+                <th>Horsepower</th>
+                <td>200 Hp.</td>
+            </tr>
+            <tr>
+                <th>Size (L.W.H)</th>
+                <td>6.1m x 2m x 3.2m</td>
+            </tr>
+        </table>
+    </div>
+    <div class="block_region">
+        <div class="block_region_sub"></div>
+    </div>
+    <div class="block_region">
+        <div class="block_region_sub"></div>
+    </div>
+
+  </div>
+  <div style="padding:20px;margin-top:0%;background-color:black;height:2vw;">   <!--page down-->
+  </div>
+  <script>
+
+  </script>
+</body>
+</html>
+

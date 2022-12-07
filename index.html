@@ -1,207 +1,195 @@
 <!DOCTYPE html>
 <html>
-  <link rel="stylesheet" href="css/Navbar.css">
 <head>
-  <meta charset="UTF-8">
-    <title>Official Advance Vehicle Webiste</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/Animation.css">
+<script src="js/gsap.min.js"></script>
+<script src="js/ScrollTrigger.min.js"></script>
+<script type="module" src="js/animation.js"></script>
 <style>
-  * {
-  box-sizing: border-box;
-  }
-  body {
-    margin:0;
-  }
-  .Page01{
-      margin-top:30px;
-      background:linear-gradient(rgba(150,150,150),rgba(50,50,50));
-      width:100%;
-      height:47.5vw;
-      display: table;
-  }
-  .Page02{
-      margin-top:0%;
-      background:linear-gradient(rgba(50,50,50),rgba(220,220,220));
-      width:100%;
-      height:46vw;
-      display: block;
-  }
-  .Page03{
-      margin-top:0%;
-      background:linear-gradient(rgba(220,220,220),rgba(100,100,100));
-      width:100%;
-      height:44vw;
-      display: table;
-  }
-  .pic01_region {
-    position: relative;
-    margin-top:5%;
-    margin-right:70px;
-    float:right; 
-    background-color:#cccccc;
-    width:60%;
-    height:30vw;
-  }
-  .pic01_sub_region{
-    position: absolute;
-    left:-35%;
-    top:-100px;
-    background-color:white;
-    display:block;
-    width:50%;
-    height:40%;
-  }
-  .pic02_region{
-    margin-top:5%;
-    margin-left:20%;
-    background-color:#456781;
-    width:35%;
-    height:40%;
-    display:table;
-    float:left;
-  }
-  .pic03_region{
-    margin-top:3%;
-    margin-left:5%;
-    background-color:white;
-    width:35%;
-    height:45%;
-    display:table;
-    float:left;
-    border-radius: 50%;
-  }
-  .pic04_region{
-    position: relative;
-    margin-top:2%;
-    margin-left:20%;
-    background-color:#781456;
-    width:75%;
-    height:35%;
-    display:table;
-    float:left;
-  }
-  .pic04_sub_region{
-    position: absolute;
-    right : 0px;
-    bottom:0px;
-    background-color:white;
-    display:block;
-    width:350px;
-    height:80px;
+* {
+    box-sizing: border-box;
+}
 
-  }
-  .block_region{
-    top:10%;
-    left:15%;
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.video-container {
+    width: 100%;
+    height: 100%;
     position: relative;
-    background-color: #00CED1;
-    float:left;
-    width:20%;
-    margin:2%;
-    height:70%;
-	flex-direction:row;
-  }
-  .block_region_sub{
-    position: absolute;
-    top:0px;
-    width:100%;
-    height:40%;
-    display:table;
-    background-color:black;
-  }
-  tr{
-    border-style: solid;
-    border-width:2px;
-  }
-  td{
-    text-align: right;
-  }
-  table{
-    text-align: center;
-    margin0%;
-    font-size:120%;
-    border: 1px solid black;
-    border-width:2px;
-    border-collapse: collapse;
-    width:100%;
-  }
-  none {border-style: solid;}
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Just styling the content of the div, the *magic* in the previous rules */
+.video-container .caption {
+  z-index: 1;
+  position: relative;
+  height: 768px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.719);
+}
+.tittle{
+    margin-top: 22%;
+}
+#navbar {
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  margin-top: 17px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #d9ff00;
+  color: rgb(0, 0, 0);
+  border-radius: 25px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+.logo{
+    float: left;
+    padding: 10px;  
+}
+.content{
+  padding: 16px;
+  width: 100%;
+  background-color: #292929;
+  color: white;
+}
+.racecontainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.racecontainer video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Just styling the content of the div, the *magic* in the previous rules */
+.racecontainer .caption1 {
+  z-index: 1;
+  position: relative;
+  height: 768px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.719);
+}
+.sport{
+  padding: 16px;
+  width: 100%;
+  margin-top: 29%;
+  background-color: rgba(255, 25, 25, 0.342);
+  color: white;
+}
 </style>
-<script>
-  x=1;
-  function change(){
-    x++;
-    document.getElementById("photo").src="assets/car_sample0"+x+".jpg";
-    if(x > 1)
-      x = 0;
-  }
-</script>
 </head>
 <body>
-  <ul>
-  <ul_con>
-    <div class="logo">																	<!--call logo class-->
-      <img src="assets/AV.png" alt="AV" style="display:block; margin:auto;">															<!--print logo-->
-    </div>
-    <li><a href="#bla">Main Page</a></li>														
-    <li><a href="Product.html">AV AUTO</a></li>
-    <li><a href="#bla">Introduction</a></li>
-    <li><a class="active" href="index.html">Home</a></li>	<!--print all the button, home button call active class to change color-->s
-  </ul_con>
-  </ul>
-
-  <div class="Page01">		<!--I make the page long so I can check the navbar position is fixed on top or not-->
-
-        <br><br>	
-        <h1>Fixed Top Navigation Bar</h1>														<!--random text-->
-        <h2>Scroll this page to see the effect</h2>
-        <h2>The navigation bar will stay at the top of the page while scrolling</h2>
-            <div class ="pic01_region">
-              <img id="photo" src='assets/car_sample01.jpg' onclick="change()"style = "width:100%; height:100%; object-fit:cover;">
-                <span class="pic01_sub_region"></span>
-            </div>
-  </div>
-  <div class="Page02">   <!--P2-->
-        <div class="pic02_region">02</div>
-        <div class="pic03_region">03</div>
-        <div class="pic04_region">04
-            <span class="pic04_sub_region">04-SUB</span>
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="assets/Y2Mate.is - XPENG  The 6th Generation Flying Car Video [HD]-6gpRCw2Y4-8-1080p-1654094001796.mp4" type="video/mp4" />
+        </video>
+        <div class="caption">
+          <center><img src="assets/text-1667039764961.png" class="tittle lineUp" alt="ASCENT VEHICLE"></center>
         </div>
-  </div>
-  <div class="Page03">   <!--P3-->
-    <div class="block_region">
-        <div class="block_region_sub">
-        <img src="assets/car_DRONE.jpg" alt="AV" style="display:block; margin:auto; width:90%; height:90%;">
+    </div>
+    <div id="navbar">
+        <div class="logo">																	<!--call logo class-->
+            <img src="assets/AV.png" alt="AV" class="logo">															<!--print logo-->
+          </div>
+        <a href="javascript:void(0)">MAIN PAGE</a>
+        <a href="Product.html">AV AUTO</a>
+        <a href="Home.html">HOME</a>
+        <a class="active" href="Index.html">INTRODUCTION</a>
+    </div>
+    <div class="content">
+        <center><h1 class="revealUp">WELCOME TO ASCENT VEHICLE</h1></center>
+        <p class="revealUp">The company was originally founded as a spinoff of Toyota Industries by Kiichiro Toyoda in 1937. 
+            It is one of the largest automobile manufacturers in the world, producing about 10 million vehicles per year. 
+            In 2012, it also reported the production of its 200 millionth vehicle. 
+            After World War II, ASCENT VEHICLE benefited from TAIWAN's alliance with the U.S., which would give rise to The ASCENT VEHICLE Way and the ASCENT VEHICLE Production System. 
+            ASCENT VEHICLE was praised for being a leader in the development and sales of more fuel-efficient hybrid electric vehicles, starting with the introduction of the AV Prius in 1997.</p>
+        <p class="revealUp">The company has been accused of greenwashing for its skepticism of all-electric vehicles and its focus on the development of hydrogen fuel cell vehicles. 
+            In late 2022, the company signed an £11.3m government deal with the UK's Department for Business, Energy and Industrial Strategy to help it develop its Hilux FC model, a new range of hydrogen-powered pickup trucks.
+        </p>
+        <center><h2 class="revealUp">ASCENT VEHICLE NOW</h2></center>
+        <p class="revealUp">
+            By 2020, ASCENT VEHICLE reclaimed its position as the largest automaker in the world, surpassing Volkswagen. 
+            It sold 9.528 million vehicles globally despite an 11.3% drop in sales due to the COVID-19 pandemic. 
+            In March 2021, ASCENT VEHICLE, its subsidiary Hotai Motor, and Yulon Motors announced the creation of a strategic partnership. The three companies said they would form a new joint venture with the aim of developing fuel cell and electric light trucks. 
+            In April 2021, ASCENT VEHICLE said that it will buy Lyft's self-driving technology unit for $550 million and merge it with its newly created Woven Planet Holdings automation division.
+        </p>
+        <p class="revealUp">
+            In June 2021, the company defended its donations to United States Republican lawmakers after they voted against certifying the results of the 2020 presidential election. 
+            The company then reversed course in July 2021 and ceased donations to election objectors.
+        </p>
+    </div>
+    <div class="racecontainer">
+        <video autoplay muted loop>
+            <source src="assets/RACE.mp4" type="video/mp4" />
+        </video>
+        <div class="caption1">
+            <div class="sport">
+                <center><h1 class="revealUp">ASCENT VEHICLE IN MOTOSPORT</h1></center>
+                <p class="revealUp">
+                    Since its introduction to motorsport in the early 1970s, ASCENT VEHICLE has been involved in a number of motorsport activities, 
+                    most notably in Formula One, NASCAR, IndyCar, sports car racing, various off road rallies and the WRC. Currently, ASCENT VEHICLE participates in the ASCENT VEHICLE Racing Series, 
+                    Super Formula, Formula Three, Formula Drift, NHRA, USAC, Super GT, NASCAR, the WRC and the WEC.
+                </p>
+            </div>   
         </div>
-        <table style="margin-top:75%; left:0px;">    
-            <tr>
-                <th colspan="2"style="font-size:180%;">AV DRONE</th>
-            </tr>
-            <tr>
-                <th>Extreme Speed</th>
-                <td>130 Kmph.</td>
-            <tr>
-                <th>Horsepower</th>
-                <td>200 Hp.</td>
-            </tr>
-            <tr>
-                <th>Size (L.W.H)</th>
-                <td>6.1m x 2m x 3.2m</td>
-            </tr>
-        </table>
     </div>
-    <div class="block_region">
-        <div class="block_region_sub"></div>
-    </div>
-    <div class="block_region">
-        <div class="block_region_sub"></div>
-    </div>
-
-  </div>
-  <div style="padding:20px;margin-top:0%;background-color:black;height:2vw;">   <!--page down-->
-  </div>
-  <script>
-
-  </script>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        if (document.body.clientWidth > 1900) {
+        document.body.style.zoom = "140%";
+        }
+        </script>
 </body>
 </html>
-
