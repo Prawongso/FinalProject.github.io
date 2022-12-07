@@ -13,21 +13,21 @@
   }
   .Page01{
       margin-top:30px;
-      background-color:#ff5050;
+      background:linear-gradient(rgba(150,150,150),rgba(50,50,50));
       width:100%;
       height:47.5vw;
       display: table;
   }
   .Page02{
       margin-top:0%;
-      background-color:#ffcccc;
+      background:linear-gradient(rgba(50,50,50),rgba(220,220,220));
       width:100%;
       height:46vw;
       display: block;
   }
   .Page03{
       margin-top:0%;
-      background-color:#ddaabb;
+      background:linear-gradient(rgba(220,220,220),rgba(100,100,100));
       width:100%;
       height:44vw;
       display: table;
@@ -62,7 +62,7 @@
   .pic03_region{
     margin-top:3%;
     margin-left:5%;
-    background-color:#545454;
+    background-color:white;
     width:35%;
     height:45%;
     display:table;
@@ -99,6 +99,30 @@
     margin:2%;
     height:70%;
 	flex-direction:row;
+  }
+  .block_region_sub{
+    position: absolute;
+    top:0px;
+    width:100%;
+    height:40%;
+    display:table;
+    background-color:black;
+  }
+  tr{
+    border-style: solid;
+    border-width:2px;
+  }
+  td{
+    text-align: right;
+  }
+  table{
+    text-align: center;
+    margin0%;
+    font-size:120%;
+    border: 1px solid black;
+    border-width:2px;
+    border-collapse: collapse;
+    width:100%;
   }
   none {border-style: solid;}
 </style>
@@ -144,9 +168,34 @@
         </div>
   </div>
   <div class="Page03">   <!--P3-->
-    <div class="block_region">01</div>
-    <div class="block_region">02</div>
-    <div class="block_region">03</div>
+    <div class="block_region">
+        <div class="block_region_sub">
+        <img src="assets/car1.jpg" alt="AV" style="display:block; margin:auto; width:90%; height:90%;">
+        </div>
+        <table style="margin-top:75%; left:0px;">    
+            <tr>
+                <th colspan="2"style="font-size:180%;">AV DRONE</th>
+            </tr>
+            <tr>
+                <th>Extreme Speed</th>
+                <td>130 Kmph.</td>
+            <tr>
+                <th>Horsepower</th>
+                <td>200 Hp.</td>
+            </tr>
+            <tr>
+                <th>Size (L.W.H)</th>
+                <td>6.1m x 2m x 3.2m</td>
+            </tr>
+        </table>
+    </div>
+    <div class="block_region">
+        <div class="block_region_sub"></div>
+    </div>
+    <div class="block_region">
+        <div class="block_region_sub"></div>
+    </div>
+
   </div>
   <div style="padding:20px;margin-top:0%;background-color:black;height:2vw;">   <!--page down-->
   </div>
@@ -155,3 +204,4 @@
   </script>
 </body>
 </html>
+
