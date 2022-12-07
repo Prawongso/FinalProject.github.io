@@ -47,15 +47,16 @@ const elts = {
 };
 
 const texts = [
-  "If",
+  "Thank",
   "You",
-  "Like",
-  "It",
+  "For",
+  "Visiting",
   "Please",
   "Give",
   "a Love",
   ":)",
-  "by @DotOnion"
+  "By 黄庚辰",
+  "By 徐葆翰"
 ];
 
 const morphTime = 1;
