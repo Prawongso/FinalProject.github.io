@@ -5,12 +5,36 @@
   <meta charset="UTF-8">
     <title>Official Advance Vehicle Webiste</title>
 <style>
+  * {
+  box-sizing: border-box;
+  }
   body {
     margin:0;
   }
+  .Page01{
+      margin-top:30px;
+      background-color:#ff5050;
+      width:100%;
+      height:47.5vw;
+      display: table;
+  }
+  .Page02{
+      margin-top:0%;
+      background-color:#ffcccc;
+      width:100%;
+      height:46vw;
+      display: block;
+  }
+  .Page03{
+      margin-top:0%;
+      background-color:#ddaabb;
+      width:100%;
+      height:44vw;
+      display: table;
+  }
   .pic01_region {
     position: relative;
-    margin-top:0%;
+    margin-top:5%;
     margin-right:70px;
     float:right; 
     background-color:#cccccc;
@@ -19,19 +43,19 @@
   }
   .pic01_sub_region{
     position: absolute;
-    left:-400px;
+    left:-35%;
     top:-100px;
     background-color:white;
     display:block;
-    width:500px;
-    height:200px;
+    width:50%;
+    height:40%;
   }
   .pic02_region{
     margin-top:5%;
     margin-left:20%;
     background-color:#456781;
-    width:600px;
-    height:350px;
+    width:35%;
+    height:40%;
     display:table;
     float:left;
   }
@@ -39,8 +63,8 @@
     margin-top:3%;
     margin-left:5%;
     background-color:#545454;
-    width:500px;
-    height:400px;
+    width:35%;
+    height:45%;
     display:table;
     float:left;
     border-radius: 50%;
@@ -50,8 +74,8 @@
     margin-top:2%;
     margin-left:20%;
     background-color:#781456;
-    width:1400px;
-    height:300px;
+    width:75%;
+    height:35%;
     display:table;
     float:left;
   }
@@ -72,8 +96,8 @@
     background-color: #00CED1;
     float:left;
     width:20%;
-    margin:40px;
-    height:600px;
+    margin:2%;
+    height:70%;
 	flex-direction:row;
   }
   none {border-style: solid;}
@@ -101,7 +125,7 @@
   </ul_con>
   </ul>
 
-  <div style="padding:20px;margin-top:30px;background-color:#ff5050;height:46vw;">		<!--I make the page long so I can check the navbar position is fixed on top or not-->
+  <div class="Page01">		<!--I make the page long so I can check the navbar position is fixed on top or not-->
 
         <br><br>	
         <h1>Fixed Top Navigation Bar</h1>														<!--random text-->
@@ -112,21 +136,22 @@
                 <span class="pic01_sub_region"></span>
             </div>
   </div>
-  <div style="padding:20px;margin-top:0%;background-color:#ffcccc;height:44vw;">   <!--P2-->
-    <div class="a">
+  <div class="Page02">   <!--P2-->
         <div class="pic02_region">02</div>
         <div class="pic03_region">03</div>
         <div class="pic04_region">04
             <span class="pic04_sub_region">04-SUB</span>
         </div>
-    </div>
   </div>
-  <div style="padding:20px;margin-top:0%;background-color:#ddaabb;height:44vw;">   <!--P3-->
+  <div class="Page03">   <!--P3-->
     <div class="block_region">01</div>
     <div class="block_region">02</div>
     <div class="block_region">03</div>
   </div>
   <div style="padding:20px;margin-top:0%;background-color:black;height:2vw;">   <!--page down-->
   </div>
+  <script>
+
+  </script>
 </body>
 </html>
