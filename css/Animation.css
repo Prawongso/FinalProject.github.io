@@ -1,4 +1,19 @@
-/*animation section*/
+@import url("https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  position: relative;
+  letter-spacing: 0.04em;
+}
+.revealUp {
+  opacity: 0;
+  visibility: hidden;
+}
+.spacer {
+  height: 50vh;
+  background-color: #000;
+}
 .lineUp {
     animation: 3s anim-lineUp ease-in;
   }
