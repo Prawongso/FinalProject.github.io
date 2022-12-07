@@ -1,0 +1,155 @@
+.grid{
+    font-size: 30px;
+    width: 100%;
+    float: left;
+    position: relative;
+    padding: 10px;
+    /*border: 1px solid red;*/
+    }
+    model-viewer {
+      z-index:1;  
+      height: 400px;
+      width: 400px;
+      float: left;
+      position: relative;
+      border: none;
+    }
+    .nextprev{
+      position: relative;
+      float: left;
+      background-color: #000000;
+      border-radius: 10px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .nextprev:hover{
+      background-color: yellow;
+      color: black;
+    }
+    .gridtext{
+    font-size: 20px;
+    width: 100%;
+    float: left;
+    position: relative;
+    padding: 10px;
+    color: white;
+    /*border: 1px solid red;*/
+    }
+    .gridspec{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(116,116,116,1) 100%, rgba(130,145,138,1) 100%);
+    font-size: 20px;
+    width: 100%;
+    float: left;
+    position: relative;
+    padding: 10px;
+    /*border: 1px solid red;*/
+    }
+    .speedspec{
+      text-align: center;
+      position: relative;
+      float: left;
+      font-weight: 900;
+    }
+    .speed{
+      position: relative;
+      float: left;
+      height: 50px;
+      width: 150px;
+    }
+    .enginespec{
+      text-align: center;
+      position: relative;
+      float: right;
+      font-weight: 900;
+    }
+    .engine{
+      position: relative;
+      float: right;
+      height: 60px;
+      width: 110px;
+    }
+    .gridspec2{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(116,116,116,1) 100%, rgba(130,145,138,1) 100%);
+    font-size: 20px;
+    width: 100%;
+    float: left;
+    position: relative;
+    padding: 10px;
+    /*border: 1px solid red;*/
+    }
+    .dimensionspec{
+      text-align: center;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: 900;
+    }
+    .dimension{
+      position: relative;
+      float: left;
+      height: 100px;
+      width: 100px;
+    }
+    .merch{
+    text-align: center;
+    background: white;
+    font-size: 20px;
+    width: 100%;
+    float: left;
+    position: relative;
+    padding: 10px;
+    font-weight: 900;
+    /*border: 1px solid red;*/
+    }
+    .merchicon{
+      text-align: center;
+      position: relative;
+      height: 50px;
+      width: 50px;
+    }
+    .subscribe{
+      text-align: center;
+      float: left;
+      width: 100%;
+      background: #5e5e5e;
+      color: white;
+      position: relative;
+    }
+    .footer{
+      text-align: center;
+      float: left;
+      width: 100%;
+      background: #000000;
+      color: white;
+      position: relative;
+    }
+    table, th, td {
+    padding: 15px;
+    }
+    table {
+    width: 100%;
+    }
+    a:link, a:visited {
+      color: white;
+    }
+    a:hover {
+      color: yellow;
+    }
+    
+    .copyright{
+      float: left;
+      font-size: 10px;
+      text-align: center;
+      width: 100%;
+      background: #000000;
+      color: #444444;
+      position: relative;
+      font-style: italic;
+    }
