@@ -41,8 +41,8 @@
     /*border: 1px solid red;*/
     }
     .gridspec{
-    background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(116,116,116,1) 100%, rgba(130,145,138,1) 100%);
+    background: rgb(167,167,167);
+    background: linear-gradient(90deg, rgba(167,167,167,1) 0%, rgba(255,255,255,1) 51%, rgba(167,167,167,1) 100%);
     font-size: 20px;
     width: 100%;
     float: left;
@@ -75,8 +75,8 @@
       width: 110px;
     }
     .gridspec2{
-    background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(116,116,116,1) 100%, rgba(130,145,138,1) 100%);
+    background: rgb(167,167,167);
+    background: linear-gradient(90deg, rgba(167,167,167,1) 0%, rgba(255,255,255,1) 51%, rgba(167,167,167,1) 100%);
     font-size: 20px;
     width: 100%;
     float: left;
