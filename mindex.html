@@ -126,14 +126,16 @@ height: 100%;
         <a href="Home.html" class="my-bar-item my-button">HOME</a>
         <a href="mProduct.html" class="my-bar-item my-button">AV AUTO</a>
         <a href="#" class="my-bar-item my-button">MAIN PAGE</a>
-    </div>
-    <div id="main">
+      </div>
+    
+      <div id="main">
+    
         <div class="my-color">
-            <button id="openNav" class="my-button my-color my-xlarge" onclick="my_open()">&#9776;</button>
-            <div class="my-container">
+          <button id="openNav" class="my-button my-color my-xlarge" onclick="my_open()">&#9776;</button>
+          <div class="my-container">
             <img src="assets/AV.png" class="logo" alt="av">
+          </div>
         </div>
-    </div>
     <div class="video-container">
         <video autoplay muted loop>
             <source src="assets/Y2Mate.is - XPENG  The 6th Generation Flying Car Video [HD]-6gpRCw2Y4-8-1080p-1654094001796.mp4" type="video/mp4" />
@@ -220,12 +222,6 @@ height: 100%;
       </div>
     </div>
     <script>
-    if (document.body.clientWidth > 1900) {
-    document.body.style.zoom = "140%";
-    }
-    if (screen.width <= 700) {
-    document.location = "mindex.html";
-      }
     function my_open() {
     document.getElementById("main").style.marginLeft = "25%";
     document.getElementById("mySidebar").style.width = "25%";
