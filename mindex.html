@@ -116,6 +116,16 @@ height: 100%;
       position: relative;
       font-style: italic;
     }
+    #container1 {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    filter: url(#threshold) blur(0.6px);
+}
 </style>
 </head>
 <body>
@@ -126,16 +136,16 @@ height: 100%;
         <a href="Home.html" class="my-bar-item my-button">HOME</a>
         <a href="mProduct.html" class="my-bar-item my-button">AV AUTO</a>
         <a href="#" class="my-bar-item my-button">MAIN PAGE</a>
-      </div>
+    </div>
     
-      <div id="main">
-    
+    <div id="main">
         <div class="my-color">
-          <button id="openNav" class="my-button my-color my-xlarge" onclick="my_open()">&#9776;</button>
-          <div class="my-container">
-            <img src="assets/AV.png" class="logo" alt="av">
-          </div>
+            <button id="openNav" class="my-button my-color my-xlarge" onclick="my_open()">&#9776;</button>
+            <div class="my-container">
+                <img src="assets/AV.png" class="logo" alt="av">
+            </div>
         </div>
+    </div>
     <div class="video-container">
         <video autoplay muted loop>
             <source src="assets/Y2Mate.is - XPENG  The 6th Generation Flying Car Video [HD]-6gpRCw2Y4-8-1080p-1654094001796.mp4" type="video/mp4" />
@@ -181,20 +191,10 @@ height: 100%;
             </div>   
         </div>
     </div>
-    <div id="container">
+    <div id="container1">
         <span id="text1"></span>
         <span id="text2"></span>
-      </div>
-      <svg id="filters">
-        <defs>
-            <filter id="threshold">
-                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
-                      0 1 0 0 0
-                      0 0 1 0 0
-                      0 0 0 255 -140" />
-            </filter>
-        </defs>
-      </svg>
+    </div>
       <div class="subscribe">
         <p>SUBSCRIBE TO THE ADVANCE VEHICLE NEWSLETTERS</p>
       </div>
@@ -220,7 +220,6 @@ height: 100%;
       <div class="copyright">
         <p>Copyright 2022 - All rights reserved By 黄庚辰 and 徐葆翰</p>
       </div>
-    </div>
     <script>
     function my_open() {
     document.getElementById("main").style.marginLeft = "25%";

@@ -55,8 +55,8 @@ const texts = [
   "Give",
   "a Love",
   ":)",
-  "By 黄庚辰",
-  "By 徐葆翰"
+  "By 庚辰",
+  "By 葆翰"
 ];
 
 const morphTime = 1;
