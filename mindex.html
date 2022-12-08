@@ -2,12 +2,12 @@
 <html>
 <head>
     <title>WELCOME TO AV</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/Animation.css">
     <script src="js/gsap.min.js"></script>
     <script src="js/ScrollTrigger.min.js"></script>
-    <script type="module" src="js/animation.js"></script>>
+    <script type="module" src="js/animation.js"></script>
 <style>
 * {
 box-sizing: border-box;
@@ -119,14 +119,6 @@ height: 100%;
 </style>
 </head>
 <body>
-    <div class="video-container">
-        <video autoplay muted loop>
-            <source src="assets/Y2Mate.is - XPENG  The 6th Generation Flying Car Video [HD]-6gpRCw2Y4-8-1080p-1654094001796.mp4" type="video/mp4" />
-        </video>
-        <div class="caption">
-          <img src="assets/text-1667039764961.png" class="tittle lineUp" alt="ASCENT VEHICLE">
-        </div>
-    </div>
     <div class="my-sidebar my-bar-block my-card my-animate-left" style="display:none" id="mySidebar">
         <button class="my-bar-item my-button my-large"
         onclick="my_close()">Close &times;</button>
@@ -136,11 +128,18 @@ height: 100%;
         <a href="#" class="my-bar-item my-button">MAIN PAGE</a>
     </div>
     <div id="main">
-
         <div class="my-color">
             <button id="openNav" class="my-button my-color my-xlarge" onclick="my_open()">&#9776;</button>
             <div class="my-container">
             <img src="assets/AV.png" class="logo" alt="av">
+        </div>
+    </div>
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="assets/Y2Mate.is - XPENG  The 6th Generation Flying Car Video [HD]-6gpRCw2Y4-8-1080p-1654094001796.mp4" type="video/mp4" />
+        </video>
+        <div class="caption">
+          <img src="assets/text-1667039764961.png" class="tittle lineUp" alt="ASCENT VEHICLE">
         </div>
     </div>
     <div class="content">
@@ -221,6 +220,12 @@ height: 100%;
       </div>
     </div>
     <script>
+    if (document.body.clientWidth > 1900) {
+    document.body.style.zoom = "140%";
+    }
+    if (screen.width <= 700) {
+    document.location = "mindex.html";
+      }
     function my_open() {
     document.getElementById("main").style.marginLeft = "25%";
     document.getElementById("mySidebar").style.width = "25%";
