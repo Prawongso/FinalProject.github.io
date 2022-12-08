@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <meta charset="UTF-8">
+    <title>AV DRONE</title>
+    <link rel="stylesheet" href="css/Navbar.css">
+    <link rel="stylesheet" href="css/Footer.css">
+    <link rel="stylesheet" href="css/PC.css">
+    <link rel="stylesheet" href="css/Animation.css">
+<style>
+    .GPS{
+        border:none;
+        width: 100%;
+        height: 768px;
+        position: relative;
+        margin-top: 40px;
+    }
+    .tittle{
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        padding: 10px;
+        margin-top: 66px;
+        padding-top: 17px;
+        height: 74px;
+        background-color: #292929;
+        color: white;
+    }
+</style>
+</head>
 <body>
-
-<h2>Remove the Iframe Border</h2>
-<p>To remove the default border of the iframe, use CSS:</p>
-
-<iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"></iframe>
-
+    <ul>
+        <ul_con>
+          <div class="logo">																	<!--call logo class-->
+            <img src="assets/AV.png" alt="AV" style="display:block; margin:auto;">															<!--print logo-->
+          </div>
+          <li><a class="active" href="Dealers.html">DEALERS</a></li>														
+          <li><a href="Product.html">AV AUTO</a></li>
+          <li><a href="Home.html">HOME</a></li>	<!--print all the button, home button call active class to change color-->s
+          <li><a href="index.html">INTRODUCTION</a></li>
+    </ul>
+    <div class="tittle">
+        <center><h1 class="lineUp">FIND THE NEAREST ASCENT VEHICLE DEALERS</h1></center>    
+    </div>
+<iframe src="https://static.apps.ferrarinetwork.ferrari.com/dealer-locator/index.html?ds=D&pm=C&gl=en_GB" class="GPS" title="Dealers Location"></iframe>
+<div class="footer">
+    <p>SUBSCRIBE TO THE ADVANCE VEHICLE NEWSLETTERS</p>
+  </div>
+  <div class="footer2">
+    <table>
+      <tr>
+        <th><img src="assets/Icon/5ca483b65d32fb0b9e2ac5a3-facebook.png" alt="Facebook"><b href="https://www.facebook.com/" target="_blank">FACEBOOK</b></th>
+        <th><img src="assets/Icon/5ca4860a5d32fb0b9e2ac5a8-instagram.png" alt="Instagram"><b href="https://www.instagram.com/" target="_blank">INSTAGRAM</b></th>
+        <th><img src="assets/Icon/5ca487ee5d32fb0b9e2ac5ad-linkedin.png" alt="Linkedin"><b href="https://www.linkedin.com/" target="_blank">LINKEDIN</b></th>
+        <th><img src="assets/Icon/628cd2388a4b79293d7c99ff-tiktok.svg" alt="Tik Tok"><b href="https://www.tiktok.com/en/" target="_blank">TIK TOK</b></th>
+      </tr>
+      <tr>
+        <th><img src="assets/Icon/628cd2a7bc2f334e875664a9-twitch.svg" alt="Twitch"><b href="https://www.twitch.tv/" target="_blank">TWITCH</b></th>
+        <th><img src="assets/Icon/5ca487595d32fb0b9e2ac5aa-twitter.png" alt="Twitter"><b href="https://twitter.com/?lang=en" target="_blank">TWITTER</b></th>
+        <th><img src="assets/Icon/5ca487bf5d32fb0b9e2ac5ac-youtube.png" alt="Youtube"><b href="https://www.youtube.com/" target="_blank">YOUTUBE</b></th>
+      </tr>
+    </table>
+  </div>
+  <div class="copyright">
+    <p>Copyright 2022 - All rights reserved By 黄庚辰 and 徐葆翰</p>
+  </div>
+  <script>
+    if (document.body.clientWidth > 1900) {
+        document.body.style.zoom = "140%";
+      }
+  </script>
 </body>
 </html>
