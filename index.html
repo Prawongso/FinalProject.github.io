@@ -2,9 +2,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Welcome to Advance Vehicle Company</title>
+<title>WELCOME TO AV</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/Animation.css">
+<link rel="stylesheet" href="css/menu2.css">
 <script src="js/gsap.min.js"></script>
 <script src="js/ScrollTrigger.min.js"></script>
 <script type="module" src="js/animation.js"></script>
@@ -79,7 +80,7 @@ body {
 .sticky + .content {
   padding-top: 60px;
 }
-.logo{
+.logo1{
     float: left;
     padding: 10px;  
 }
@@ -168,7 +169,7 @@ body {
     </div>
     <div id="navbar">
         <div class="logo">																	<!--call logo class-->
-            <img src="assets/AV.png" alt="AV" class="logo">															<!--print logo-->
+            <img src="assets/AV.png" alt="AV" class="logo1">															<!--print logo-->
           </div>
         <a href="javascript:void(0)">MAIN PAGE</a>
         <a href="Product.html">AV AUTO</a>
@@ -262,6 +263,9 @@ body {
         if (document.body.clientWidth > 1900) {
         document.body.style.zoom = "140%";
         }
+        if (screen.width <= 700) {
+        document.location = "mindex.html";
+      }
         </script>
 </body>
 </html>
