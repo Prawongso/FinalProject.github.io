@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AV DEALERS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/Mobile.css">
+    <link rel="stylesheet" href="css/Animation.css">
+<style>
+    .GPS{
+        border:none;
+        width: 100%;
+        height: 768px;
+        position: relative;
+        margin-top: 40px;
+    }
+    .tittle{
+        width: 100%;
+        position: relative;
+        padding: 10px;
+        padding-top: 17px;
+        background-color: #292929;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <div class="my-sidebar my-bar-block my-card my-animate-left" style="display:none" id="mySidebar">
+        <button class="my-bar-item my-button my-large"
+        onclick="my_close()">Close &times;</button>
+        <a href="mindex.html" class="my-bar-item my-button">INTRO</a>
+        <a href="Home.html" class="my-bar-item my-button">HOME</a>
+        <a href="mProduct.html" class="my-bar-item my-button">AV AUTO</a>
+        <a href="mDealers.html" class="my-bar-item my-button">DEALERS</a>
+    </div>
+    <div id="main">
+        <div class="my-color">
+          <button id="openNav" class="my-button my-color my-xlarge" onclick="my_open()">&#9776;</button>
+          <div class="my-container">
+            <img src="assets/AV.png" class="logo" alt="av">
+          </div>
+        </div>
+    </div>
+    <div class="tittle">
+        <center><h1 class="lineUp">FIND THE NEAREST ASCENT VEHICLE DEALERS</h1></center>    
+    </div>
+<iframe src="https://static.apps.ferrarinetwork.ferrari.com/dealer-locator/index.html?ds=D&pm=C&gl=en_GB" class="GPS" title="Dealers Location"></iframe>
+<div class="subscribe">
+    <p>SUBSCRIBE TO THE ADVANCE VEHICLE NEWSLETTERS</p>
+  </div>
+  <div class="footer">
+    <table>
+      <tr>
+        <th><img src="assets/Icon/5ca483b65d32fb0b9e2ac5a3-facebook.png" alt="Facebook"><a href="https://www.facebook.com/" target="_blank">FACEBOOK</a></th>
+        <th><img src="assets/Icon/5ca4860a5d32fb0b9e2ac5a8-instagram.png" alt="Instagram"><a href="https://www.instagram.com/" target="_blank">INSTAGRAM</a></th>
+      </tr>
+      <tr>
+        <th><img src="assets/Icon/5ca487ee5d32fb0b9e2ac5ad-linkedin.png" alt="Linkedin"><a href="https://www.linkedin.com/" target="_blank">LINKEDIN</a></th>
+        <th><img src="assets/Icon/628cd2388a4b79293d7c99ff-tiktok.svg" alt="Tik Tok"><a href="https://www.tiktok.com/en/" target="_blank">TIK TOK</a></th>
+      </tr>
+      <tr>
+        <th><img src="assets/Icon/628cd2a7bc2f334e875664a9-twitch.svg" alt="Twitch"><a href="https://www.twitch.tv/" target="_blank">TWITCH</a></th>
+        <th><img src="assets/Icon/5ca487595d32fb0b9e2ac5aa-twitter.png" alt="Twitter"><a href="https://twitter.com/?lang=en" target="_blank">TWITTER</a></th>
+      </tr>
+      <tr>
+        <th colspan="2"><img src="assets/Icon/5ca487bf5d32fb0b9e2ac5ac-youtube.png" alt="Youtube"><a href="https://www.youtube.com/" target="_blank">YOUTUBE</a></th>
+      </tr>
+    </table>
+  </div>
+  <div class="copyright">
+    <p>Copyright 2022 - All rights reserved By 黄庚辰 and 徐葆翰</p>
+  </div>
+</div>
+<script>
+    function my_open() {
+      document.getElementById("main").style.marginLeft = "25%";
+      document.getElementById("mySidebar").style.width = "25%";
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("openNav").style.display = 'none';
+    }
+    function my_close() {
+      document.getElementById("main").style.marginLeft = "0%";
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("openNav").style.display = "inline-block";
+    }
+  </script>
+</body>
+</html>
