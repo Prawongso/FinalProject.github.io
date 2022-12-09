@@ -121,13 +121,13 @@ body{
     float: right;
     padding-right: 60px;
   }
-  b { 
+  a.foot { 
     text-decoration: none; 
   }
-  b:link, b:visited {
+  a.foot:link, a.foot:visited {
     color: white;
   }
-  b:hover {
+  a.foot:hover {
     color: yellow;
   }
   @media only screen and (min-width: 1900px) {
