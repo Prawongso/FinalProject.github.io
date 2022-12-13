@@ -1,130 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <link rel="stylesheet" href="css/Navbar.css">
 <head>
+  <link rel="stylesheet" href="css/Navbar.css">
+  <link rel="stylesheet" href="css/Home_block.css">
+  <link rel="stylesheet" href="css/slide01.css">
+  <script src="js/slide02.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
   <title>Official ASCENT VEHICLE Webiste</title>
 <style>
-  * {
+* {
   box-sizing: border-box;
-  }
-  body {
-    margin:0;
-  }
-  .Page01{
-      margin-top:30px;
-      background:linear-gradient(rgba(150,150,150),rgba(50,50,50));
-      width:100%;
-      height:47.5vw;
-      display: table;
-  }
-  .Page02{
-      margin-top:0%;
-      background:linear-gradient(rgba(50,50,50),rgba(220,220,220));
-      width:100%;
-      height:46vw;
-      display: block;
-  }
-  .Page03{
-      margin-top:0%;
-      background:linear-gradient(rgba(220,220,220),rgba(100,100,100));
-      width:100%;
-      height:44vw;
-      display: table;
-  }
-  .pic01_region {
-    position: relative;
-    margin-top:5%;
-    margin-right:70px;
-    float:right; 
-    background-color:#cccccc;
-    width:60%;
-    height:30vw;
-  }
-  .pic01_sub_region{
-    position: absolute;
-    left:-35%;
-    top:-100px;
-    background-color:white;
-    display:block;
-    width:50%;
-    height:40%;
-  }
-  .pic02_region{
-    margin-top:5%;
-    margin-left:20%;
-    background-color:#456781;
-    width:35%;
-    height:40%;
-    display:table;
-    float:left;
-  }
-  .pic03_region{
-    margin-top:3%;
-    margin-left:5%;
-    background-color:white;
-    width:35%;
-    height:45%;
-    display:table;
-    float:left;
-    border-radius: 50%;
-  }
-  .pic04_region{
-    position: relative;
-    margin-top:2%;
-    margin-left:20%;
-    background-color:#781456;
-    width:75%;
-    height:35%;
-    display:table;
-    float:left;
-  }
-  .pic04_sub_region{
-    position: absolute;
-    right : 0px;
-    bottom:0px;
-    background-color:white;
-    display:block;
-    width:350px;
-    height:80px;
-
-  }
-  .block_region{
-    top:10%;
-    left:15%;
-    position: relative;
-    background-color: #00CED1;
-    float:left;
-    width:20%;
-    margin:2%;
-    height:70%;
-	flex-direction:row;
-  }
-  .block_region_sub{
-    position: absolute;
-    top:0px;
-    width:100%;
-    height:40%;
-    display:table;
-    background-color:black;
-  }
-  tr{
-    border-style: solid;
-    border-width:2px;
-  }
-  td{
-    text-align: right;
-  }
-  table{
-    text-align: center;
-    margin:0%;
-    font-size:120%;
-    border: 1px solid black;
-    border-width:2px;
-    border-collapse: collapse;
-    width:100%;
-  }
-  none {border-style: solid;}
+}
 </style>
 <script>
   x=1;
@@ -149,18 +36,26 @@
   </ul_con>
   </ul>
 
-  <div class="Page01">		<!--I make the page long so I can check the navbar position is fixed on top or not-->
-
-        <br><br>	
-        <h1>Fixed Top Navigation Bar</h1>														<!--random text-->
-        <h2>Scroll this page to see the effect</h2>
-        <h2>The navigation bar will stay at the top of the page while scrolling</h2>
-            <div class ="pic01_region">
-              <img id="photo" src='assets/img/car_sample01.jpg' onclick="change()"style = "width:100%; height:100%; object-fit:cover;">
-                <span class="pic01_sub_region"></span>
+  <div class="Page01">	<!--P1-->
+        <div class ="pic01_region">
+            <div class="mySlides">
+                <img src="assets/img/car_sample01.jpg" autoPlay() style="width:100%;  object-fit:cover;">
             </div>
+            <div class="mySlides">
+                <img src="assets/img/car_sample02.jpg" autoPlay() style="width:100%;  object-fit:cover;">
+            </div>
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+
+           <!-- <span class="pic01_sub_region"></span>-->
+        </div>
+        <div class="pic_ill_region">ill</div>
   </div>
   <div class="Page02">   <!--P2-->
+        <div class="pic05_region">05</div>
         <div class="pic02_region">02</div>
         <div class="pic03_region">03</div>
         <div class="pic04_region">04
@@ -204,4 +99,3 @@
   </script>
 </body>
 </html>
-
