@@ -36,7 +36,7 @@ function autoPlay() {
             num = 0;
         }
         plusSlides(1);
-    }, 2000);
+    }, 8000);
 }
 function replay(){
     clearInterval(timer);
