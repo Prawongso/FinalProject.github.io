@@ -1,144 +1,152 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="css/Navbar.css">
-  <link rel="stylesheet" href="css/Home_block.css">
-  <link rel="stylesheet" href="css/slide01.css">
-  <script src="js/slide02.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="UTF-8">
-  <title>Official ASCENT VEHICLE Webiste</title>
+<link rel="stylesheet" href="Navbar.css">
+<link rel="stylesheet" href="slide01_home.css">
+<link rel="stylesheet" href="slide02_home.css">
+<link rel="stylesheet" href="slide03_home.css">
+<link rel="stylesheet" href="slide01.css">
+<script src="slide02.js"></script>
 <style>
-* {
-  box-sizing: border-box;
-}
+
 </style>
-<script>
-  x=1;
-  function change(){
-    x++;
-    document.getElementById("photo").src="assets/img/car_sample0"+x+".jpg";
-    if(x > 1)
-      x = 0;
-  }
-</script>
+
 </head>
 <body>
   <ul>
   <ul_con>
     <div class="logo">																	<!--call logo class-->
-      <img src="assets/AV.png" alt="AV" style="display:block; margin:auto;">															<!--print logo-->
+      <img src="#" style="display:block; margin:auto;">
     </div>
     <li><a href="Dealers.html">DEALERS</a></li>														
     <li><a href="Product.html">AV AUTO</a></li>
-    <li><a class="active" href="Home.html">HOME</a></li>	<!--print all the button, home button call active class to change color-->s
+    <li><a class="active" href="Home.html">HOME</a></li>	
     <li><a href="index.html">INTRODUCTION</a></li>
   </ul_con>
   </ul>
-
-  <div class="Page01">	<!--P1-->
-        <div class ="pic01_region">
+  <div class="Page01">
+        <div class="pic01_region">
             <div class="mySlides">
-                <img src="assets/img/slide_1.jpg" autoPlay() style="width:100%;  object-fit:cover; vertical-align: middle;">
+                <img src="s1.jpg" autoPlay() style="width:100%;height:100%; object-fit:cover; position:absolute; vertical-align: middle;">
             </div>
             <div class="mySlides">
-                <img src="assets/img/slide_2.jpg" autoPlay() style="width:100%;  object-fit:cover; vertical-align: middle;">
+                <img src="slide_2.jpg" autoPlay() style="width:100%;height:100%; object-fit:cover; position:absolute; vertical-align: middle;">
             </div>
             <div class="mySlides">
-                <img src="assets/img/slide_3.jpg" autoPlay() style="width:100%;  object-fit:cover; vertical-align: middle;">
+                <img src="slide_3.jpg" autoPlay() style="width:100%;height:100%; object-fit:cover; position:absolute; vertical-align: middle;">
             </div>
-                    <a class="prev" onclick="plusSlides(-1)">❮</a>
                     <a class="next" onclick="plusSlides(1)">❯</a>
-
-                  <span class="dot" onclick="currentSlide(1)"></span> 
-                  <span class="dot" onclick="currentSlide(2)"></span>
-                  <span class="dot" onclick="currentSlide(3)"></span> 
-
-           <span class="pic01_sub_region"></span>
-        </div>
-        <div class="pic_ill_region"></div>
-  </div>
-  <div class="Page02">   <!--P2-->
-        <div class="pic05_region">
-            <img src="assets/img/pic05.png" autoPlay() style="width:100%;height:100%;  object-fit:cover;">
-        </div>
-        <div class="pic02_region">
-            <img src="assets/img/pic02.png" autoPlay() style="width:100%;height:100%;  object-fit:cover;">
-        </div>
-        <div class="pic03_region">
-            <img src="assets/img/pic03.png" autoPlay() style="width:100%;height:100%;  object-fit:cover;">
-        </div>
-        <div class="pic04_region">
-            <img src="assets/img/long.jpg" autoPlay() style="width:100%;height:100%;  object-fit:cover;">
-            <!--<span class="pic04_sub_region">04-SUB</span>-->
-        </div>
-<!--word part-->
-        <div class="pic05_region_word">Free to fly
-        </div>
-        <div class="pic02_region_word">
-        <br><br>
-        &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        limited sales
-        </div>
-        <div class="pic03_region_word">
-        <br><br><br><br><br><br><br>
-         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-         Easy Parking
-        </div>
-        <div class="pic04_region_word">Best After service
-        </div>
-<!--covering-->
-        <div class="pic05_region_sub">
-        <br><br><br><br><br>
-        Experience <br>Fly<br> with plane
-        </div>
-        <div class="pic02_region_sub">
-        <br><br><br><br><br><br><br><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;Always be the Focus point
-        </div>
-        <div class="pic03_region_sub">
-        <br><br><br>
-        &nbsp; &nbsp; &nbsp; &nbsp; Extra parkinglot Only for you
-        </div>
-        <div class="pic04_region_sub">
-        <br><br><br><br>
-        &nbsp; &nbsp; &nbsp; &nbsp;automation Factory for the Fast repair
+            <div id="grad">
+            </div>
         </div>
   </div>
-  <div class="Page03">   <!--P3-->
-    <div class="block_region">
-        <div class="block_region_sub">
-        <img src="assets/img/car_DRONE.jpg" alt="AV" style="display:block; margin:auto; width:90%; height:90%;">
+  <div class="Page02">
+        <div id="head_block">
+            <h1 style="margin-top:5%;margin-left:10%;color:white;font-size:3em;"> Enterprise    Features</h1>
+            <br>
+            <hr style="width:100%;text-align:left;">
         </div>
-        <table style="margin-top:75%; left:0px;">    
-            <tr>
-                <th colspan="2"style="font-size:180%;">AV DRONE</th>
-            </tr>
-            <tr>
-                <th>Extreme Speed</th>
-                <td>130 Kmph.</td>
-            <tr>
-                <th>Horsepower</th>
-                <td>200 Hp.</td>
-            </tr>
-            <tr>
-                <th>Size (L.W.H)</th>
-                <td>6.1m x 2m x 3.2m</td>
-            </tr>
-        </table>
+        <div class="t">
+            <div id="block01">
+                <img src="img/pic05.png" style="width:100%; object-fit:cover; top:-25%">
+                <div class="shades">
+                    <div class="text_box">
+                        <p>Try to Fly</p>
+                    </div>
+                </div>
+            </div>
+            <div id="block03">
+                <img src="img/grass.jpg" style="width:100%; object-fit:cover; left:%">
+                <div class="shades">
+                    <div class="text_box">
+                    <p>100% organic</p>
+                    </div>
+                </div>
+            </div>
+            <div id="block04">
+                <img src="img/pic03.png" style="width:100%; object-fit:cover; top:%">
+                <div class="shades">
+                    <div class="text_box">
+                       <p>Easy Parking</p>
+                    </div>
+                </div>
+            </div>
+            <div id="block05">
+                <img src="img/jam.jpg" style="width:100%; object-fit:cover; left:%">
+                <div class="shades">
+                    <div class="text_box">
+                        <p>No Traffic Jam</p>
+                    </div>
+                </div>
+            </div>
+            <div id="block06">
+                <img src="img/c8763.jpg" style="height:100%; object-fit:cover; left:%">
+                <div class="shades">
+                    <div class="text_box">
+                        <p>Extremely Fast</p>
+                    </div>
+                </div>
+            </div>
+            <div id="block02">
+                <img src="img/pic02-1.png" style="height:100%; object-fit:cover; left:-10%">
+                <div class="shades">
+                    <div class="text_box">
+                        <p>Attractive Unique</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="block_region">
-        <div class="block_region_sub"></div>
+ <div class="Page03">
+    <div id="head_block">
+            <h1 style="margin-top:5%;margin-left:10%;color:black;font-size:3em;"> Specification </h1>
+            <br>
+            <hr style="width:100%;border-color: black;text-align:left;">
     </div>
-    <div class="block_region">
-        <div class="block_region_sub"></div>
+    <div id="box">
+        <div id="block07">
+            <div class="picture">
+                <img src="img/car1.jpg" style="width:100%; object-fit:cover;">
+            </div>
+            <div class="content">
+            <br><br>
+            <h2>AUTO</h2>
+                <h3>#a</h3>
+                <h3>#a</h3>
+                <h3>#a</h3>
+                <h3>#a</h3>
+                <br><h3 href="Product.html">Buy Now</h3>
+            </div>
+        </div>
+        <div id="block08">
+            <div class="picture">
+                <img src="img/car2.jpg" style="width:100%; object-fit:cover;top:-7%;">
+            </div>
+            <div class="content">
+            <br><br>
+            <h2>AUTO</h2>
+                <h3>#a</h3>
+                <h3>#a</h3>
+                <h3>#a</h3>
+                <h3>#a</h3>
+                <br><h3 href="Product.html">Buy Now</h3>
+            </div>
+        </div>
+        <div id="block09">
+            <div class="picture">
+                <img src="img/car3.jpg" style="width:100%; object-fit:cover; ">
+            </div>
+            <div class="content">
+            <br><br>
+            <h2>AUTO</h2>
+                <h3>#a</h3>
+                <h3>#a</h3>
+                <h3>#a</h3>
+                <h3>#a</h3>
+                <br><h3 href="Product.html">Buy Now</h3>
+            </div>
+        </div>
     </div>
-
   </div>
-  <div style="padding:20px;margin-top:0%;background-color:black;height:2vw;">   <!--page down-->
-  </div>
-  <script>
-
-  </script>
 </body>
 </html>
