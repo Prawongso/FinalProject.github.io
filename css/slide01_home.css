@@ -1,0 +1,45 @@
+body{
+    font-family:sans-serif;
+}  
+  .Page01{
+      margin-top:0px;
+      background:linear-gradient(rgba(150,150,150),rgba(50,50,50));
+      width:100%;
+      height:48vw;
+      display:table;
+      position:relative;
+  }
+  .Page02{
+      margin-top:0%;
+      background:linear-gradient(rgba(50,50,50),rgba(150,150,150));
+      width:100%;
+      height:46vw;
+      display:table;
+      position:relative;
+  }
+  .Page03{
+      margin-top:0%;
+      background:linear-gradient(rgba(150,150,150),rgba(100,100,100));
+      width:100%;
+      height:45vw;
+      position:relative;
+      display:table;
+  }
+.pic01_region {
+    top:10%;
+    position: absolute;
+    right:0%;
+    float:right; 
+    background-color:#;
+    width:100%;
+    height:40vw;
+}
+#grad {
+    position: absolute;
+    top:-5%;
+    width:100%;
+    height: 105%;
+    background-color: transparent; /* For browsers that do not support gradients */
+    background-image: linear-gradient(110deg, black 30%,black 50%,transparent 70%,transparent 80%,transparent 100%);
+    color:white;
+}
