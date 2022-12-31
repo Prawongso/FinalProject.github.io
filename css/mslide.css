@@ -4,8 +4,14 @@
   }
 #bar{
     width:100%;
-    height:100px;
+    height:320px;
     background:black;
+}
+.logoSide{
+    position:absolute;
+    margin-left:auto;
+    height:20%;
+    width:30%
 }
 .Page01{
     margin-top:0px;
@@ -35,7 +41,7 @@
     position:absolute;
     width:100%;
     height:60%;
-    background:red;
+    background:blue;
 }
 .shadow{
     margin-top:0%;
