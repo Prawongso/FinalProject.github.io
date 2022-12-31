@@ -152,3 +152,70 @@
     background-image: linear-gradient(black 30%,black 50%,transparent 100%);
     color:white;
 }
+   .lineUp {
+    animation: 5s anim-lineUp ease-in;
+  }
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateX(-80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 100;
+  background-color: rgb(37, 37, 37);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  overflow-x: hidden;
+}
+
+.sidenav a {
+  padding: 20px 20px 20px 30px;
+  font-size: 40px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  text-decoration:none;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav a:active {
+  background: white;
+  color:black;
+}
+#main{
+    background:green;
+}
+.my-bar-item{
+    width:100%;
+    text-align:left;
+    padding:8px 16px;
+    float:left;
+    border:none;
+    display:block;
+    outline:0;
+    white-space:nowrap;
+}
+.my-bar-item::active{
+    background:white;
+}
+.my-button{
+    white-space:normal
+}
