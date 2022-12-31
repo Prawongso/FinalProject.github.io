@@ -9,8 +9,19 @@
 </style>
 </head>
 <body>
+<div id="mySidenav" class="sidenav">
+  <a class="closebtn my-bar-item my-button my-large" onclick="closeNav()">&times;Close </a>
+    <a href="mindex.html" class="my-bar-item my-button">INTRO</a>
+    <a href="mHome.html" class="my-bar-item my-button">HOME</a>
+    <a href="mProduct.html" class="my-bar-item my-button">AV AUTO</a>
+    <a href="mDealers.html" class="my-bar-item my-button">DEALERS</a>
+</div>
 
-<div id="bar"></div>
+<div id="bar">
+  <span style="color:white;font-size:100px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <img src="assets/AV.png" class="logo" alt="av" style="height:6.5%;margin-top:13%; margin-left:28%;position:absolute;">
+</div>
+<div id="main">
 <div class="Page01">
     <div class="slide">
         <div class="mySlides">
@@ -44,10 +55,10 @@
             <img src="assets/img/pic03.png" style="width:100%; object-fit:cover; top:%">
         </div>
         <div class="pic03">
-            <img src="assets/img/pic05.png" style="width:100%; object-fit:cover; top:%">
+            <img src="assets/img/pic05_2.png" style="width:100%; object-fit:cover; top:%">
         </div>
         <div class="pic04">
-            <img src="assets/img/pic02-1.png" style="height:100%; object-fit:cover; left:%;">
+            <img src="assets/img/pic02_1.png" style="height:100%; object-fit:cover; left:%;">
         </div>
         <div class="pic05">
             <img src="assets/img/jam.jpg" style="width:100%; object-fit:cover; left:%">
@@ -68,31 +79,41 @@
             <div class="picture">
                 <img src="assets/img/car1_1.jpg" style="width:100%; object-fit:cover; left:%">
             </div>
-            <p>##########</p>
-            <p>#####</p>
-            <p>#####</p>
-            <p>#####</p>
+            <p style="font-weight:bold;">AV-DRONE</p>
+            <p style="font-size:90%;">130 Kmph.</p>
+            <p style="font-size:90%;">200 hp.</p>
+            <p style="font-size:90%;">6.1 x 2 x 3.2m </p>
         </div>
         <div class="table">
             <div class="picture">
                 <img src="assets/img/car2_1.jpg" style="width:100%; object-fit:cover; left:%">
             </div>
-            <p>##########</p>
-            <p>#####</p>
-            <p>#####</p>
-            <p>#####</p>
+            <p style="font-weight:bold;">TSUBASA</p>
+            <p style="font-size:90%;">210 Kmph.</p>
+            <p style="font-size:90%;">800 hp.</p>
+            <p style="font-size:90%;">5.8 x 2 x 1.9m</p>
         </div>
         <div class="table">
             <div class="picture">
                 <img src="assets/img/car3_1.jpg" style="height:100%; object-fit:cover; left:%">
             </div>
-            <p>##########</p>
-            <p>#####</p>
-            <p>#####</p>
-            <p>#####</p>
+            <p style="font-weight:bold;">AV-BULLET</p>
+            <p style="font-size:90%;">305 Kmph.</p>
+            <p style="font-size:90%;">1,557 hp.</p>
+            <p style="font-size:90%;">4.7 x 2 x 1.2m</p>
         </div>
     </div>
 </div>
 <div class="downSlide"></div>
+</div>
+<script>
+  function openNav() {
+  document.getElementById("mySidenav").style.width = "25%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 </body>
 </html>
