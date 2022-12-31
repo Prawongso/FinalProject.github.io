@@ -55,3 +55,12 @@
       text-align:center;
       padding:5px;
   }
+  a.foot { 
+    text-align:center;
+  }
+  a.foot:link, a.foot:visited {
+    color: black;
+  }
+  a.foot:hover {
+    color: yellow;
+  }
