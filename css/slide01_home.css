@@ -44,6 +44,16 @@ body{
     color:white;
 }
 
+.text{
+    position:absolute;
+    background:;
+    width:30%;
+    height:80%;
+    color:white;
+    top:7%;
+    left:7%;
+    padding:1%;
+}
 .lineUp {
     animation: 5s anim-lineUp ease-in;
   }
