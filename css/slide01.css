@@ -1,5 +1,5 @@
 * {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
+body {font-family: 'Times New Roman', Times, serif; margin:0}
 
 /* Next & previous buttons */
 .prev, .next {
@@ -61,7 +61,8 @@ body {font-family: Verdana, sans-serif; margin:0}
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: yellow;
+  color: black;
 }
 
 /* Fading animation */

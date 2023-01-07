@@ -3,24 +3,27 @@
       left:2%;
       width:31%;
       height:99%;
-      background: linear-gradient(to bottom right ,rgba(50,50,50),rgba(220,220,220));
-      border-radius:10px;
+      background: gray;
+      border-radius:20px;
+      border-style:solid;
   }
     #block08{
       position:absolute;
       left:34.5%;
       width:31%;
       height:99%;
-      background: linear-gradient(to bottom ,rgba(50,50,50),rgba(220,220,220));
-      border-radius:10px;
+      background: gray;
+      border-radius:20px;
+      border-style:solid;
   }
     #block09{
       position:absolute;
       left:67%;
       width:31%;
       height:99%;
-      background: linear-gradient(to bottom left ,rgba(50,50,50),rgba(220,220,220));
-      border-radius:10px;
+      background: gray;
+      border-radius:20px;
+      border-style:solid;
   }
   .picture{
       position:absolute;
@@ -35,7 +38,6 @@
       top:40%;
       width:100%;
       height:60%;
-      background:;
       border-radius: 0px 0px 10px 10px;
   }
   #box{
@@ -43,10 +45,9 @@
       position:relative;
       width:65%;
       height:600px;
-      background:;
   }
   h2{
-      font-family:Verdana;
+      font-family: 'Times New Roman', Times, serif;
       margin-top:3%;
       text-align:center;
       padding:20px;
@@ -55,12 +56,14 @@
       text-align:center;
       padding:5px;
   }
-  a.foot { 
+  a.buy { 
+    font-size: 20px;
+    color: black;
     text-align:center;
   }
-  a.foot:link, a.foot:visited {
+  a.buy:link, a.foot:visited {
     color: black;
   }
-  a.foot:hover {
-    color: yellow;
+  a.buy:hover {
+    color: red;
   }

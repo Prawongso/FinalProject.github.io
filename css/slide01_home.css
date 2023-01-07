@@ -1,9 +1,9 @@
 body{
-    font-family:sans-serif;
+  font-family: 'Times New Roman', Times, serif;
 }  
   .Page01{
       margin-top:0px;
-      background:linear-gradient(rgba(150,150,150),rgba(50,50,50));
+      background: #292929;
       width:100%;
       height:48vw;
       display:table;
@@ -11,7 +11,7 @@ body{
   }
   .Page02{
       margin-top:0%;
-      background:linear-gradient(rgba(50,50,50),rgba(150,150,150));
+      background: #292929;
       width:100%;
       height:46vw;
       display:table;
@@ -19,9 +19,9 @@ body{
   }
   .Page03{
       margin-top:0%;
-      background:linear-gradient(rgba(150,150,150),rgba(100,100,100));
+      background:rgb(230, 230, 230);
       width:100%;
-      height:45vw;
+      height:900px;
       position:relative;
       display:table;
   }
@@ -30,7 +30,6 @@ body{
     position: absolute;
     right:0%;
     float:right; 
-    background-color:#;
     width:100%;
     height:40vw;
 }
@@ -46,7 +45,6 @@ body{
 
 .pp{
     position:absolute;
-    background:;
     width:30%;
     height:80%;
     color:white;
