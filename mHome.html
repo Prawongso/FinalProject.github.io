@@ -191,13 +191,17 @@
     <p>Copyright 2022 - All rights reserved By 黄庚辰 and 徐葆翰</p>
   </div>
 <script>
-  function openNav() {
-  document.getElementById("mySidenav").style.width = "25%";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
+function my_open() {
+    document.getElementById("main").style.marginLeft = "25%";
+    document.getElementById("mySidebar").style.width = "25%";
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("openNav").style.display = 'none';
+    }
+    function my_close() {
+    document.getElementById("main").style.marginLeft = "0%";
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("openNav").style.display = "inline-block";
+    }
 </script>
 </body>
 </html>
